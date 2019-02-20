@@ -1,0 +1,1749 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+/*https://images.unsplash.com/photo-1449038319053-cc4a78b12733?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f33bb494a937a2d3c44d4915ba78bcc0&auto=format&fit=crop&w=1050&q=80
+*/
+body{
+	margin:0;
+	background: white no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+
+/*url(https://images.unsplash.com/photo-1511132081771-2a63dab7b512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1067&q=80)
+
+*/
+}
+
+
+
+/******************************************************general*********************************************************
+*/	
+table{
+	width: 100%;
+}
+
+header{
+	
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	opacity: 0;
+	color: #fff;
+	
+	
+}
+.fadeIn{
+	animation: 1s fadein 0.5s forwards;
+}
+
+header nav {
+	display: flex;
+	
+}
+
+header nav li {
+	margin: 0 15px;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: .7;
+	}
+}
+
+
+nav{
+	
+	
+	transition: opacity .7s linear;
+	width: 100%;
+	
+	float: right;
+}
+
+.secondNav{
+	
+	margin-left: 9%;	
+}
+
+.secondNav:hover{
+	
+}
+
+.headWrap{
+	display: flex;
+}
+
+.head{
+	display: inline;
+}
+
+
+@media (min-width: 800px) {
+	nav:hover{
+	transition: opacity .7s ease-in;
+	opacity:1;
+	
+}
+	
+}
+
+.language{
+	    margin-left: 716px;
+}
+
+.languageSelection{
+	padding-bottom: 6px;
+	padding-right: 4px;
+}
+
+
+.inicio{
+	position: relative;
+	
+	text-align: center;
+	color: #d1d1d1;
+	margin-top: 4%;
+	opacity: .8;
+	transition: opacity 1s linear;
+	padding-right:4px;
+	
+}
+
+
+
+.inicioBlock h1{
+	font-size: 7em;
+	float: left;
+	text-transform: lowercase;
+	margin-left: -30px;
+	color: black;
+	
+
+}
+.inicioBlock h3{
+	font-size: 2em;
+	color:#720000;
+}
+
+
+
+iframe{
+	width: 100%;
+	transition: all 2s linear;
+}
+
+.heightZero{
+	height: 0;
+	transition: all 2s linear;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	display: flex;
+	/*width: 75%;*/
+	align-content: space-between;
+	justify-content: space-evenly;
+}
+
+ul li{
+	margin:70px 40px;
+	list-style: none;
+	
+}
+
+a{
+
+	text-decoration: none;
+	font-size: 1.5em;
+	color:black;
+
+}
+
+	
+
+
+
+
+.title{
+	text-transform: lowercase;
+	font-size: 1.4em;
+	margin:10px;
+	padding: 40px;
+}
+.name{
+	white-space: nowrap;
+}
+
+.sub-title{
+	font-size:.9em;
+}
+
+.rv{
+	letter-spacing: 3px!important;
+}
+
+.menu{
+	margin-top: -185px;
+	margin-left: 411px;
+	
+}
+
+
+.menu-item{
+	padding-bottom: 40px;
+	transition:color .5s linear;
+	opacity: 0.5;
+}
+
+.menu-item:hover{
+	opacity: 1;
+	transition: opacity .7s ease-in;
+}
+.menu-item:focus{
+	opacity: 1;
+	transition: opacity .7s ease-in;
+}
+
+/*.menu-item:focus{
+	opacity: 1;
+}
+*/
+
+
+.menu-item-instagram{
+	transition: color .5s linear;
+	white-space: nowrap;
+	
+
+}
+
+.menu-item-instagram:hover{
+	
+	transition: color .5s linear;
+	color:#bc2a8d;
+	/*color:#c68100;*/
+
+}
+
+.menu-item-facebook:hover{
+	
+	transition: color .5s linear;
+	color:#1f2f51;
+	/*color:#c68100;*/
+
+
+}
+
+.menu-item-sound:hover{
+	
+	transition: color .5s linear;
+	
+	color:#ff3300;
+
+}
+
+
+.menu-item-yt:hover{
+	
+	transition: color .5s linear;
+	
+	color:#ff0000;
+
+}
+
+
+
+.largeBar{
+	font-size: 2em!important;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+.noticias{
+	
+	justify-content: space-between;
+}
+
+.card{
+	/*margin-top: -100px;
+	height: 500px;
+	width:45%;
+ 	background-color: rgba(255, 255, 255, .7);
+ 	border: 5px solid black;  
+ 	text-align: center;
+ 	opacity: 1;
+ 	transition: opacity 1s linear;
+*/
+	margin-top: 43px;
+	height: 480px;
+	width:70%;
+	margin-left: 173px;
+ 	background-color: rgba(255, 255, 255, .7);
+ 	border-left: 7px solid #555;  
+ 	position: absolute;
+ 	opacity: 1;
+ 	transition: opacity 1s linear;
+ 	overflow-y: auto;
+ 	padding-left: 40px;
+
+}
+
+
+
+.card h2{
+	padding:20px;
+}
+
+.card p{
+	/*padding:10px;*/
+}
+
+.sobreCard{
+	margin-top: -178px;
+	height: 480px;
+	width:70%;
+	margin-left: 15%;
+ 	background-color: rgba(255, 255, 255, .7);
+/* 	border: 5px solid black;  
+*/ 	position: absolute;
+ 	opacity: 1;
+ 	transition: opacity 1s linear;
+}
+
+
+
+
+.bioText{
+	margin-left: 35%;
+    margin-top: -290px;
+/*    margin-right: 5%;
+*/}
+
+
+.padding80{
+	padding: 80px;
+}
+
+.alignCenter{
+	text-align: center;
+
+}
+
+.discName{
+	
+}
+
+.discText{
+	/*margin-left: 35%;*/
+    margin-top: 1%;
+    margin-right: 5%;
+}
+.pesqText{
+	margin-left: 35%;
+   
+    margin-right: 5%;
+}
+
+.pictureFrame{
+	margin:10px;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-position: center;
+}
+
+.picture{
+	background-image: url("https://i1.sndcdn.com/avatars-000512474553-m74lbj-t500x500.jpg");
+}
+
+.picture2{
+	margin:10px;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-image: url("https://static1.squarespace.com/static/58ae16ba5016e13c736aa32b/58ae17b3e4fcb5193db99ab0/58bd4a19e58c62c667f5469c/1488800291643/32679571750_39d63d1876_o.jpg?format=1000w");
+	background-position: center;
+}
+
+.pictureNews1{
+	
+	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/d4ffddb67afd847423e5142e6aed2b9a/5CE6EA34/t51.2885-15/e35/s240x240/43097864_746069552417380_1421830223643737565_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
+}
+
+.pictureNews2{
+	
+	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/6b6198387a195c559e1f0291b186e631/5D25B07D/t51.2885-15/e35/c0.135.1080.1080a/s480x480/36540145_335589456978028_7493799744821526528_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
+	
+}
+
+.pictureNews4{
+	
+	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/5cea63e2aaeccdd44120bbb4369b45c5/5D0479EE/t51.2885-15/e35/c0.135.1080.1080/s320x320/43687508_254507911900433_3000742752137764571_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
+	
+}
+
+
+.pictureNews3{
+	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/525e6c299b97f0790a1da464ab3648f1/5CE98CC3/t51.2885-15/sh0.08/e35/s750x750/39958950_526567851122129_8236898540945670144_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
+
+}
+
+/*.scroll{
+	overflow: auto;
+}*/
+
+
+.work{
+	margin-left: -19.5%;
+	margin-top: 2%;
+}
+
+.soloCard{
+	margin-top: -370px;
+	height: 480px;
+	width:57%;
+	margin-left: 300px;
+ 	background-color: transparent;
+ 	border-right: 5px solid black;  
+ 	position: absolute;
+ 	opacity: 1;
+ 	transition: all 2s linear;
+ 	padding: 10px;
+ 	overflow: auto;
+}
+
+.noWidth{
+	width: 0%;
+	transition: all 2s linear;
+	padding-right: 105px!important; 
+	overflow-x: hidden;
+	
+}
+
+#soloBtn{
+	cursor: pointer;
+	width: 20%;
+	position: fixed;
+	margin-top: -2%;
+}
+
+#soloBtn:hover{
+	color: black;
+}
+
+.colabCard{
+	margin-top: -373px;
+	height: 480px;
+	width:60%;
+	margin-left: 420px;
+ 	background-color: transparent;
+ 	border-right: 5px solid black;  
+ 	position: absolute;
+ 	opacity: 1;
+ 	transition: all 2s linear;
+ 	padding: 10px;
+ 	overflow: auto;
+}
+
+.colabText{
+	margin-left: 5%;
+}
+
+.pushColab{
+	 margin-left: 76%;
+
+
+}
+
+.colabWidth{
+	width: 13%;
+	overflow-x: hidden;
+}
+
+
+#colabBtn{
+	cursor: pointer;
+	width: 20%;
+	position: fixed;
+	margin-top: -2%
+}
+
+#colabBtn:hover{
+	color: black;
+}
+
+.improvCard{
+	margin-top: -365px;
+	height: 480px;
+	width:60%;
+	margin-left: 37%;
+ 	background-color: transparent;
+ 	border-right:5px solid black;  
+ 	position: absolute;
+ 	opacity: 1;
+ 	transition: all 2s linear;
+ 	overflow: auto;
+}
+
+.improvWidth{
+	width: 12%;
+	transition: all 2s linear;
+	overflow-x: hidden;
+	background-color: transparent;
+}
+
+.pushImprov{
+	transition: all 2s linear;
+	margin-left: 90%!important;
+}
+
+/*.pushImprovColab{
+	transition: all 2s linear;
+	margin-left: 88%;
+}*/
+
+#improvBtn{
+	cursor: pointer;
+	width: 20%;
+	position: fixed;
+	margin-top: -2%
+}
+
+
+#improvBtn:hover{
+	color: black;
+}
+
+.improvText{
+	/*margin-left: 35%;*/
+    
+    margin-left: 5%;
+
+}
+
+.discCard{
+	margin-top: -371px;
+	height: 480px;
+	width:60%;
+	margin-left: 51%;
+ 	background-color:white;
+ 	border-right: 5px solid black;  
+ 	position: absolute;
+ 	opacity: 1;
+ 	transition: all 2.5s linear;
+ 	float:left;
+	
+	overflow-y: auto;
+	
+}
+
+.pushDisc{
+	margin-left: 103%;
+}
+
+.discWidth{
+	width: 11%;
+	transition: all 2s linear;
+	overflow-x: hidden;
+}
+
+.disco{
+	display: box;
+	flex-direction: column;
+}
+
+#discBtn{
+	cursor: pointer;
+	width: 20%;
+	position: fixed;
+	margin-top: -2%
+}
+
+#discBtn:hover{
+	color: black;
+	
+}
+
+.disco1{
+	background-image: url(https://images.unsplash.com/photo-1511044287905-703f02523985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	border-radius: 50%;
+	margin:10px;
+	height: 100px;
+	width: 100px;
+	background-position: center;
+
+
+}
+
+.disco2{
+	background-image: url(https://images.unsplash.com/photo-1505248207594-9f9912dda70a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+	border-radius: 50%;
+	margin:10px;
+	height: 100px;
+	width: 100px;
+	background-position: center;
+
+}
+
+.pesqCard{
+	margin-top: -553px;
+	height: 480px;
+	width:70%;
+	margin-left: 300px;
+ 	background-color: rgba(255, 255, 255, .7);
+ 	border-left: 5px solid black;  
+ 	position: absolute;
+ 	opacity: 1;
+ 	transition: opacity 1s linear;
+}
+
+.contatoCard{
+	margin-top: -1263px;
+	height: 480px;
+	width:70%;
+	margin-left: 300px;
+ 	background-color: rgba(255, 255, 255, .7);
+ 	border: 5px solid black;  
+ 	position: absolute;
+ 	opacity: 1;
+ 	transition: opacity 1s linear;
+}
+
+.transparent{
+	opacity: 0;
+	z-index: -1000;
+	
+}
+
+.displayNone{
+	display: none;
+}
+
+
+
+.cursorDefault{
+	cursor: default;
+	pointer-events: none;
+}
+
+
+.spaceP{
+	height: 10px;
+}
+
+.social{
+	margin-top: 58px;
+	transition:1s ease-in;
+	margin-left: 180%;
+}
+
+.socialMedia{
+	
+    padding: initial;
+    border: 2px solid white;
+    width: 300px;
+	z-index: 10000;
+	
+	
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: 1s linear;
+}
+
+
+
+
+.socialMedia ul{
+	
+	width: 100%;
+	text-align: center;
+
+}
+
+
+
+.selected{
+	color: black!important;
+	opacity: 1;
+
+
+}
+
+
+
+.fade{
+	margin-left: -1000px;
+	
+}
+
+
+@media (max-width: 800px) {
+	nav {
+		padding: 20px 50px;
+		flex-direction: column;
+	}
+
+	
+}
+
+/*****************************************underline thingy********************************/
+
+.underline {
+  display: inline!important;
+  position: relative!important;
+  overflow: hidden!important;
+}
+
+.underlineLeft:after{
+  content: ""!important;
+  position: absolute!important;
+  z-index: -1!important;
+  left: 0!important;
+  right: 100%!important;
+  bottom: 2px!important;
+  background: red!important;
+  height: 4px!important;
+  transition-property: left right!important;
+  transition-duration: 0.8s!important;
+  transition-timing-function: ease-out!important;
+}
+.underlineLeft:hover:after,
+.underlineLeft:focus:after,
+.underlineLeft:active:after {
+  right: 0!important;
+}
+/*
+string stuff*/
+
+canvas {
+	background-color: #fff;  
+	margin: auto;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	margin-right:-200px;
+
+}
+
+
+/*canvas{
+  width: 400px;
+  height: 300px;
+  background: #ffa0a0;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}*/
+
+figure.snip1321 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+figure.snip1321 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+figure.snip1321 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.snip1321 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.snip1321 h2,
+figure.snip1321 h4 {
+  margin: 0;
+}
+figure.snip1321 h2 {
+  font-weight: 600;
+}
+figure.snip1321 h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+figure.snip1321 i {
+  font-size: 32px;
+}
+figure.snip1321:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+figure.snip1321 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1321:hover figcaption,
+figure.snip1321.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1321:hover:after,
+figure.snip1321.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+
+
+/*body {
+  margin: 0; 
+  padding: 0;
+  background: #111;
+  height: 100%;
+}*/
+/*.diy-slideshow{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  max-height: 100%;
+  background-position: center;
+}
+figure{
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption{
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .8em;
+  bottom: .75em;
+  right: .35em;
+  padding: .25em;
+  color: #fff;
+  background: rgba(0,0,0, .25);
+  border-radius: 2px;
+}
+
+figure.show{
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+.next, .prev{
+  color: #fff;
+  position: absolute;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none;
+}
+.next:hover, .prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next{
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev{
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+*/
+
+/* Style the buttons */
+.btn:active {
+ font-weight: 600;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+	color: black!important;
+	opacity: 1;
+	right: 0!important;
+
+
+}
+
+.active, .btn:hover:after,
+.active, .btn:focus:after,
+.active, .btn::active:after {
+  color: black!important;
+	opacity: 1;
+	right: 0!important;
+}
+
+
+
+
+/*========================================================================================================================*/
+
+
+/*custom scroll bar
+*/
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 grey; 
+ 	
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+ /* border-radius: 10px;*/
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+/*============================================================================================================================================================*/
+
+
+
+																				/*		palavras bio*/
+
+.wordsWrap{
+	display: flex;
+	height: 100%;
+	/*width:50%;*/
+}
+
+.words{
+	padding: 100px;
+	flex-direction: row;
+	
+}
+
+.roma{
+	height: 80px;
+	width: 80px;
+	font-size: 2em;	
+	transition: all 1s ease-out!important;
+	border-radius: 50%;
+	opacity: 0.8;
+	transform: scale(1);
+	color:pink;
+}
+
+
+
+.roma:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s ease-out!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.nylon{
+	height: 20px;
+	font-size: 2em;	
+}
+
+.nylon:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+
+/*.metacarpos{
+	height: 20px;
+	font-size: 2em;	
+}
+.metacarpos:hover{
+	opacity: 1;
+	margin: 50px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}*/
+
+
+.maca{
+	height: 20px;
+	font-size: 2em;	
+}
+
+.maca:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+
+.breu{
+	height: 20px;
+	font-size: 2em;	
+}
+
+.breu:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+
+.mate{
+	height: 20px;
+	font-size: 2em;	
+}
+
+.mate:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+
+.bigorna{
+	height: 20px;
+	font-size: 2em;	
+}
+
+.bigorna:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.borracha{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+
+.borracha:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+
+.parafusos{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.parafusos:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.anis{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+
+.anis:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+.tomilho{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.tomilho:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.cranio{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.cranio:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.suina{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.suina:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+
+.arruelas{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.arruelas:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.hd{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.hd:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.ceramica{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.ceramica:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.martelo{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.martelo:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.lampadas{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.lampadas:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.camomila{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.camomila:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.costelas{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.costelas:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.alecrim{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.alecrim:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.estribo{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.estribo:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.tibia{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.tibia:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.louro{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.louro:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.pedras{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.pedras:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.ervaDoce{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.ervaDoce:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+
+.agulhasDeTrico{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.agulhasDeTrico:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.canela{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.canela:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.croche{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.croche:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.vertebras{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.vertebras:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.carqueja{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.carqueja:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.sacro{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.sacro:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.metatarsos{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.metatarsos:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.obsidiana{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.obsidiana:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.denteDeLeao{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.denteDeLeao:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+
+
+}
+
+.slide{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.slide:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+
+.ulna{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.ulna:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.manjericão{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.manjericao:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.salsinha{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.salsinha:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.superball{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.superball:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.cenoura{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.cenoura:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.dentes{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.dentes:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.bacia{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.bacia:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.fita{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.fita:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+.magnetica{
+	height: 20px;
+	font-size: 2em;	
+	
+}
+.magnetica:hover{
+	opacity: 1;
+	margin: 30px;
+	transform: scale(1.5)!important;
+	color: black;
+	transition: all 1s linear!important;
+	background-color: rgb(255, 255, 255);
+
+
+}
