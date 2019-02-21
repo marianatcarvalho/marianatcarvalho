@@ -875,43 +875,51 @@ $(".listenThreeBtn").click(function(){
 $(".listenColabOneBtn").click(function(){
     // colabState();
     // if(verifier()=true;){
-        if(true&&$(".videoColabOne").hasClass("heightZero")&&!($(".videoColabOne").hasClass("open"))){
-            $(".videoColabOne").addClass("heightZero")
-            colabPush();
-        }
+       if(this===previousTarget||(!$(".colabCard").hasClass("colabWidth"))) {
+        // alert("You've clicked this element twice.");
+        videoState();
+    }
+    else{
+        colabPush();
+    }
 
-        closeVideo();
-        
-    // }
+    previousTarget=this;
+
    
+   closeVideo();
 
-
-     videoState();
-
-    $(".videoColabOne").toggleClass("heightZero");
-     if($(".videoColabOne").hasClass("open")){
+$(".videoColabOne").toggleClass("heightZero");
+    if($(".videoColabOne").hasClass("open")){
         $(".videoColabOne").addClass("heightZero");
     }
+
+     return false;
 });
 
 
 
 $(".listenImprovOneBtn").click(function(){
-     if(true&&$(".videoImprovOne").hasClass("heightZero")&&!($(".videoImprovOne").hasClass("open"))){
-            $(".videoImprovOne").addClass("heightZero")
-            improvPush();
-        }
+    if(this===previousTarget||(!$(".improvCard").hasClass("improvWidth"))) {
+        // alert("You've clicked this element twice.");
+        videoState();
+    }
+    else{
+        improvPush();
+    }
 
-        closeVideo();
+    previousTarget=this;
 
-    videoState();
+   
+   closeVideo();
+
+
 
     $(".videoImprovOne").toggleClass("heightZero");
     if($(".videoImprovOne").hasClass("open")){
         $(".videoImprovOne").addClass("heightZero");
     }
 
-   
+   return false;
 });
 
 
@@ -1040,7 +1048,32 @@ else{
 // }
 
 
+// ============================================letters random color==============================================
+
+$(document).ready(function() {
+$( ".word" ).mouseover(function() {
+$(this).css("background",getRandomColor());
+// $(this).css("color", "white");
+});
+
+function getRandomColor () {
+ var letters = '0123456789ABCDEF'.split('');
+ var color = '#';
+ for (var i = 0; i < 6; i++) {
+     color += letters[Math.floor(Math.random() * 16)];
+ }
+ return color;
+    }
+});
+
+
+
+
+
+
 
 
 
 // ====================================================================youtube comands=================================================================
+
+
