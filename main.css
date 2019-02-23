@@ -118,7 +118,7 @@ nav{
 
 .inicio{
 	position: relative;
-	
+	margin-left: 3%;
 	text-align: center;
 	color: #d1d1d1;
 	margin-top: 4%;
@@ -281,12 +281,14 @@ section {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 100px 80px;
+	/*padding: 100px 80px;*/
+	margin-top: 5%;
+
 }
 
 .noticias{
 	
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .card{
@@ -299,10 +301,10 @@ section {
  	opacity: 1;
  	transition: opacity 1s linear;
 */
-	margin-top: 43px;
-	height: 480px;
+	margin-top: 7%;
+	/*height: 480px;*/
 	width:70%;
-	margin-left: 173px;
+	
  	background-color: rgba(255, 255, 255, .7);
  	border-left: 7px solid #555;  
  	position: absolute;
@@ -324,7 +326,7 @@ section {
 }
 
 .sobreCard{
-	margin-top: -178px;
+	margin-top: 10px;
 	height: 480px;
 	width:70%;
 	margin-left: 15%;
@@ -419,8 +421,8 @@ section {
 
 
 .work{
-	margin-left: -19.5%;
-	margin-top: 2%;
+	margin-left: -15%;
+	margin-top: 22%;
 	justify-content: space-between;
 }
 
@@ -612,7 +614,7 @@ section {
 }
 
 .pesqCard{
-	margin-top: -33%;
+	margin-top: -25%;
 	height: 480px;
 	width:70%;
 	margin-left: 12%;
@@ -1863,14 +1865,34 @@ h1 {
 
 /*===========================================================media selector===========================================================*/
 
+@media screen and (max-width: 700px ){
+
+	.card{
+		margin-top: 56%;
+		height: 80%;
+		margin-left: 0;
+	}
+
+	
+
+	.inicioTitle{
+		transform: rotate(90deg)!important;
+		margin-left: -60%;
+		margin-top: 36%;
+
+	}
+		
+
+
+
+}
+
 @media screen and(max-width: 1750px){
 	.improvCard{
 		.margin-left: 40%;
 	}
 
-	/*.social{
-		margin-left: 148%;
-	}*/
+	
 }
 
 
@@ -1879,15 +1901,11 @@ h1 {
 		.margin-left: 40%;
 	}
 
-/*	.social{
-		margin-left: 60%;
-	}*/
+
 }
 
 @media screen and (max-width: 1450px){
-	/*.social{
-		margin-left: 57%;
-	}*/
+
 
 	.menu{
 		margin-left: 0;
@@ -1898,9 +1916,7 @@ h1 {
 }
 
 @media screen and (max-width: 1400px){
-	.headWrap{
-		
-	}
+	
 
 	.language{
 		margin-left: 0;
@@ -1910,9 +1926,6 @@ h1 {
 		font-size: 1.5em;
 	}
 
-/*	.social{
-		margin-left: 57%;
-	}*/
 
 }
 
@@ -1924,3 +1937,4 @@ h1 {
 
 
 }
+
