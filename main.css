@@ -670,7 +670,7 @@ section {
 .socialMedia{
 	
     padding: initial;
-    border: 2px solid white;
+   
     width: 300px;
 	z-index: 10000;
 	
@@ -1865,25 +1865,47 @@ h1 {
 
 /*===========================================================media selector===========================================================*/
 
-@media screen and (max-width: 700px ){
+@media screen and (max-width: 900px ){
 
-	.card{
-		margin-top: 56%;
-		height: 80%;
-		margin-left: 0;
+	body{
+		overflow-y: 800px;
+		height: 800px;
 	}
 
-	
+	.card{
+		margin-top: -19%;
+		height: 80%;
+		margin-left: 16%!important;
+	}
+
+	.inicioBlock{
+		position: absolute;
+		margin-top: 71%;
+	}
 
 	.inicioTitle{
 		transform: rotate(90deg)!important;
 		margin-left: -60%;
-		margin-top: 36%;
+		
 
+	}
+
+	.language{
+		margin-top: -3%!important;
+		margin-left:8;
+		font-size: 2em!important;
 	}
 		
 
+	.menu{
+		display: block;
+		margin-left: -66%!important;
+		margin-top:-10%;
+	}
 
+	.social{
+		font-size: 1.3em;
+	}
 
 }
 
