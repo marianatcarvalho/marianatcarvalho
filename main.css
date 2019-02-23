@@ -415,6 +415,7 @@ section {
 .work{
 	margin-left: -19.5%;
 	margin-top: 2%;
+	justify-content: space-between;
 }
 
 .soloCard{
@@ -605,12 +606,12 @@ section {
 }
 
 .pesqCard{
-	margin-top: -553px;
+	margin-top: -33%;
 	height: 480px;
 	width:70%;
-	margin-left: 300px;
+	margin-left: 12%;
  	background-color: rgba(255, 255, 255, .7);
- 	border-left: 5px solid black;  
+ 	/*border: 5px solid black;  */
  	position: absolute;
  	opacity: 1;
  	transition: opacity 1s linear;
@@ -972,13 +973,20 @@ figure.show{
 	display: flex;
 	height: 100%;
 	/*width:50%;*/
+	margin-left: -100%;
+/*	margin-top: 0%;*/
 }
 
 .words{
 	padding: 100px;
 	flex-direction: row;
+	white-space: nowrap;
+	overflow: hidden;
 
 	
+}
+.bioLine{
+	margin:  70px;
 }
 
 .word{
@@ -992,7 +1000,7 @@ figure.show{
 .word:hover{
 	opacity: 1;
 	transition: all 1s linear;
-	padding: 100px;
+	padding: 70px;
 
 }
 
@@ -1010,7 +1018,7 @@ figure.show{
 
 .roma:hover{
 	opacity: 1;
-	margin: 30px;
+	/*margin: 30px;*/
 	transform: scale(1.5)!important;
 	color: black;
 	transition: all 1s ease-out!important;
@@ -1027,7 +1035,7 @@ figure.show{
 
 .nylon:hover{
 	opacity: 1;
-	margin: 30px;
+	/*margin: 30px;*/
 	transform: scale(1.5)!important;
 	color: black;
 	transition: all 1s linear!important;
@@ -1061,7 +1069,7 @@ figure.show{
 
 .maca:hover{
 	opacity: 1;
-	margin: 30px;
+	/*margin: 30px;*/
 	transform: scale(1.5)!important;
 	color: black;
 	transition: all 1s linear!important;
@@ -1847,3 +1855,56 @@ h1 {
 }
 */
 
+/*===========================================================media selector===========================================================*/
+
+
+@media screen and(max-width: 1650px){
+	.improvCard{
+		.margin-left: 40%;
+	}
+
+	.social{
+		margin-left: 60%;
+	}
+}
+
+@media screen and (max-width: 1450px){
+	.social{
+		margin-left: 57%;
+	}
+
+	.menu{
+		margin-left: 0;
+		font-size: 1.5em;
+	}
+
+
+}
+
+@media screen and (max-width: 1400px){
+	.headWrap{
+		
+	}
+
+	.language{
+		margin-left: 0;
+	}
+	.menu{
+		margin-left: 0;
+		font-size: 1.5em;
+	}
+
+	.social{
+		margin-left: 57%;
+	}
+
+}
+
+@media screen and (max-width: 1100px){
+	#myCanvas{
+		display: none;
+	}
+
+
+
+}
