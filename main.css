@@ -74,8 +74,8 @@ nav{
 }
 
 .secondNav{
-	
-	margin-left: 9%;	
+	justify-content: center;
+		
 }
 
 .secondNav:hover{
@@ -84,10 +84,16 @@ nav{
 
 .headWrap{
 	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .head{
 	display: inline;
+}
+
+.player{
+	width: 100%;
 }
 
 
@@ -198,7 +204,7 @@ a{
 
 .menu{
 	margin-top: -185px;
-	margin-left: 411px;
+	
 	
 }
 
@@ -656,7 +662,7 @@ section {
 .social{
 	margin-top: 58px;
 	transition:1s ease-in;
-	margin-left: 180%;
+	/*margin-left: 180%;*/
 }
 
 .socialMedia{
@@ -1857,21 +1863,31 @@ h1 {
 
 /*===========================================================media selector===========================================================*/
 
+@media screen and(max-width: 1750px){
+	.improvCard{
+		.margin-left: 40%;
+	}
+
+	/*.social{
+		margin-left: 148%;
+	}*/
+}
+
 
 @media screen and(max-width: 1650px){
 	.improvCard{
 		.margin-left: 40%;
 	}
 
-	.social{
+/*	.social{
 		margin-left: 60%;
-	}
+	}*/
 }
 
 @media screen and (max-width: 1450px){
-	.social{
+	/*.social{
 		margin-left: 57%;
-	}
+	}*/
 
 	.menu{
 		margin-left: 0;
@@ -1894,9 +1910,9 @@ h1 {
 		font-size: 1.5em;
 	}
 
-	.social{
+/*	.social{
 		margin-left: 57%;
-	}
+	}*/
 
 }
 
