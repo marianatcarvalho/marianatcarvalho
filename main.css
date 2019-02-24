@@ -1,1978 +1,1100 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font: normal 16px sans-serif;
-	color: #555;
-}
-
-/*https://images.unsplash.com/photo-1449038319053-cc4a78b12733?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f33bb494a937a2d3c44d4915ba78bcc0&auto=format&fit=crop&w=1050&q=80
-*/
-body{
-	margin:0;
-	background: white no-repeat center center fixed;
-	background-size: cover;
-	font-family: 'Roboto', sans-serif;
-	overflow: hidden;
-
-/*url(https://images.unsplash.com/photo-1511132081771-2a63dab7b512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1067&q=80)
-
-*/
-}
-
-
-
-/******************************************************general*********************************************************
-*/	
-table{
-	width: 100%;
-	margin-top: 10%;
-}
-
-header{
-	
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	opacity: 0;
-	color: #fff;
-	
-	
-}
-.fadeIn{
-	animation: 1s fadein 0.5s forwards;
-}
-
-header nav {
-	display: flex;
-	
-}
-
-header nav li {
-	margin: 0 15px;
-}
-
-@keyframes fadein {
-	100% {
-		opacity: .7;
-	}
-}
-
-
-nav{
-	
-	
-	transition: opacity .7s linear;
-	width: 100%;
-	
-	float: right;
-}
-
-.secondNav{
-	justify-content: center;
-		
-}
-
-.secondNav:hover{
-	
-}
-
-.headWrap{
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-}
-
-.head{
-	display: inline;
-}
-
-.player{
-	width: 100%;
-}
-
-
-@media (min-width: 800px) {
-	nav:hover{
-	transition: opacity .7s ease-in;
-	opacity:1;
-	
-}
-	
-}
-
-.language{
-	    margin-left: 716px;
-}
-
-.languageSelection{
-	padding-bottom: 6px;
-	padding-right: 4px;
-}
-
-
-.inicio{
-	position: relative;
-	margin-left: 3%;
-	text-align: center;
-	color: #d1d1d1;
-	margin-top: 4%;
-	opacity: .8;
-	transition: opacity 1s linear;
-	padding-right:4px;
-	
-}
-
-
-
-.inicioBlock h1{
-	font-size: 7em;
-	float: left;
-	text-transform: lowercase;
-	margin-left: -30px;
-	color: black;
-	
-
-}
-.inicioBlock h3{
-	font-size: 2em;
-	color:#720000;
-}
-
-
-
-iframe{
-	width: 100%;
-	transition: all 2s linear;
-}
-
-.heightZero{
-	height: 0;
-	transition: all 2s linear;
-}
-
-ul{
-	margin:0;
-	padding: 0;
-	display: flex;
-	/*width: 75%;*/
-	align-content: space-between;
-	justify-content: space-evenly;
-}
-
-ul li{
-	margin:70px 40px;
-	list-style: none;
-	
-}
-
-a{
-
-	text-decoration: none;
-	font-size: 1.5em;
-	color:black;
-
-}
-
-	
-
-
-
-
-.title{
-	text-transform: lowercase;
-	font-size: 1.4em;
-	margin:10px;
-	padding: 40px;
-}
-.name{
-	white-space: nowrap;
-}
-
-.sub-title{
-	font-size:.9em;
-}
-
-.rv{
-	letter-spacing: 3px!important;
-}
-
-.menu{
-	margin-top: -185px;
-	
-	
-}
-
-
-.menu-item{
-	padding-bottom: 40px;
-	transition:color .5s linear;
-	opacity: 0.5;
-}
-
-.menu-item:hover{
-	opacity: 1;
-	transition: opacity .7s ease-in;
-}
-.menu-item:focus{
-	opacity: 1;
-	transition: opacity .7s ease-in;
-}
-
-/*.menu-item:focus{
-	opacity: 1;
-}
-*/
-
-
-.menu-item-instagram{
-	transition: color .5s linear;
-	white-space: nowrap;
-	
-
-}
-
-.menu-item-instagram:hover{
-	
-	transition: color .5s linear;
-	color:#bc2a8d;
-	/*color:#c68100;*/
-
-}
-
-.menu-item-facebook:hover{
-	
-	transition: color .5s linear;
-	color:#1f2f51;
-	/*color:#c68100;*/
-
-
-}
-
-.menu-item-sound:hover{
-	
-	transition: color .5s linear;
-	
-	color:#ff3300;
-
-}
-
-
-.menu-item-yt:hover{
-	
-	transition: color .5s linear;
-	
-	color:#ff0000;
-
-}
-
-
-
-.largeBar{
-	font-size: 2em!important;
-}
-
-section {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	/*padding: 100px 80px;*/
-	margin-top: 5%;
-
-}
-
-.noticias{
-	
-	justify-content: space-around;
-}
-
-.card{
-	/*margin-top: -100px;
-	height: 500px;
-	width:45%;
- 	background-color: rgba(255, 255, 255, .7);
- 	border: 5px solid black;  
- 	text-align: center;
- 	opacity: 1;
- 	transition: opacity 1s linear;
-*/
-	margin-top: 7%;
-	/*height: 480px;*/
-	width:70%;
-	
- 	background-color: rgba(255, 255, 255, .7);
- 	border-left: 7px solid #555;  
- 	position: absolute;
- 	opacity: 1;
- 	transition: opacity 1s linear;
- 	overflow-y: auto;
- 	padding-left: 40px;
-
-}
-
-
-
-.card h2{
-	padding:20px;
-}
-
-.card p{
-	/*padding:10px;*/
-}
-
-.sobreCard{
-	margin-top: 10px;
-	height: 480px;
-	width:70%;
-	margin-left: 15%;
- 	background-color: rgba(255, 255, 255, .7);
-/* 	border: 5px solid black;  
-*/ 	position: absolute;
- 	opacity: 1;
- 	transition: opacity 1s linear;
-}
-
-
-
-
-.bioText{
-	margin-left: 35%;
-    margin-top: -290px;
-/*    margin-right: 5%;
-*/}
-
-
-.padding80{
-	padding: 80px;
-}
-
-.alignCenter{
-	text-align: center;
-
-}
-
-.discName{
-	
-}
-
-.discText{
-	/*margin-left: 35%;*/
-    margin-top: 1%;
-    margin-right: 5%;
-}
-.pesqText{
-	margin-left: 35%;
+$('#news').click( function() {
+
+
+    // $("#news").toggleClass("selected");
+    // $("[id=elemid]").toggleClass("selected");
+
+
+    // if(!$("#news").hasClass("selected")){
+    //     $("#news").addClass("selected");
+    // }
+    // else{
+    //     $("#news").removeClass("selected");
+    //     $("#sobre").removeClass("selected");
+    //     $("#work").removeClass("selected");
+    //     $("#pesq").removeClass("selected");
+       
+    // }
+
+    $(".card").toggleClass("transparent");
+    $(".card").toggleClass("visible");
+  
+
+    if($(".sobreCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+    	$(".sobreCard").addClass("transparent");
+   		$(".contatoCard").addClass("transparent");
+        $(".soloCard").addClass("transparent");
+        $(".colabCard").addClass("transparent");
+        $(".improvCard").addClass("transparent");
+        $(".discCard").addClass("transparent");
+        $(".pesqCard").addClass("transparent");
+
+    }
+    $(".sobreCard").removeClass("visible");
+    $(".contatoCard").removeClass("visible");
+    $(".colabCard").removeClass("visible");
+    $(".soloCard").removeClass("visible");
+    $(".improvCard").removeClass("visible");
+    $(".discCard").removeClass("visible");
+    $(".pesqCard").removeClass("visible");
+
+
+
+} );
+
+
+$('#sobre').click( function() {
+
+    //  if(!$("#sobre").hasClass("selected")){
+    //     $("#sobre").addClass("selected");
+    // }
+    // else{
+    //     $("#news").removeClass("selected");
+    //     $("#sobre").removeClass("selected");
+    //     $("#work").removeClass("selected");
+    //     $("#pesq").removeClass("selected");
+       
+    // }
    
-    margin-right: 5%;
-}
+   
+    $(".sobreCard").toggleClass("transparent");
+    $(".sobreCard").toggleClass("visible");
+    if($(".card").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+    	$(".card").addClass("transparent");
+        $(".contatoCard").addClass("transparent");
+    	$(".soloCard").addClass("transparent");
+        $(".colabCard").addClass("transparent");
+        $(".improvCard").addClass("transparent");
+        $(".discCard").addClass("transparent");
+        $(".pesqCard").addClass("transparent");
 
-.pictureFrame{
-	margin:10px;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	background-position: center;
-}
+   
+    }
 
-.picture{
-	background-image: url("https://i1.sndcdn.com/avatars-000512474553-m74lbj-t500x500.jpg");
-}
+    $(".card").removeClass("visible");
+    $(".contatoCard").removeClass("visible");
+    $(".soloCard").removeClass("visible");
+    $(".colabCard").removeClass("visible");
+    $(".improvCard").removeClass("visible");
+    $(".discCard").removeClass("visible");
+    $(".pesqCard").removeClass("visible");
 
-.picture2{
-	margin:10px;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	background-image: url("https://static1.squarespace.com/static/58ae16ba5016e13c736aa32b/58ae17b3e4fcb5193db99ab0/58bd4a19e58c62c667f5469c/1488800291643/32679571750_39d63d1876_o.jpg?format=1000w");
-	background-position: center;
-}
+} );
 
-.pictureNews1{
-	
-	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/d4ffddb67afd847423e5142e6aed2b9a/5CE6EA34/t51.2885-15/e35/s240x240/43097864_746069552417380_1421830223643737565_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
-}
+$('#work').click( function() {
+    $(".soloCard").toggleClass("transparent");
+    $(".soloCard").toggleClass("visible");
+    $(".colabCard").toggleClass("transparent");
+    $(".colabCard").toggleClass("visible");
+    $(".improvCard").toggleClass("transparent");
+    $(".improvCard").toggleClass("visible");
+    $(".discCard").toggleClass("transparent");
+    $(".discCard").toggleClass("visible");
+   
+   
 
-.pictureNews2{
-	
-	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/6b6198387a195c559e1f0291b186e631/5D25B07D/t51.2885-15/e35/c0.135.1080.1080a/s480x480/36540145_335589456978028_7493799744821526528_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
-	
-}
+    if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+        $(".card").addClass("transparent");
+        $(".sobreCard").addClass("transparent");
+        $(".contatoCard").addClass("transparent");
+        
+        $(".improvCard").addClass("transparent");
+        
+        $(".pesqCard").addClass("transparent");
+    }
 
-.pictureNews4{
-	
-	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/5cea63e2aaeccdd44120bbb4369b45c5/5D0479EE/t51.2885-15/e35/c0.135.1080.1080/s320x320/43687508_254507911900433_3000742752137764571_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
-	
-}
-
-
-.pictureNews3{
-	background-image: url("https://instagram.fcgh1-1.fna.fbcdn.net/vp/525e6c299b97f0790a1da464ab3648f1/5CE98CC3/t51.2885-15/sh0.08/e35/s750x750/39958950_526567851122129_8236898540945670144_n.jpg?_nc_ht=instagram.fcgh1-1.fna.fbcdn.net");
-
-}
-
-/*.scroll{
-	overflow: auto;
-}*/
-
-
-.work{
-	margin-left: -15%;
-	margin-top: 22%;
-	justify-content: space-between;
-}
-
-.soloCard{
-	margin-top: -370px;
-	height: 480px;
-	width:57%;
-	margin-left: 300px;
- 	background-color: transparent;
- 	border-right: 5px solid black;  
- 	position: absolute;
- 	opacity: 1;
- 	transition: all 2s linear;
- 	padding: 10px;
- 	overflow: auto;
-}
-
-.noWidth{
-	width: 0%;
-	transition: all 2s linear;
-	padding-right: 105px!important; 
-	overflow-x: hidden;
-	
-}
-
-#soloBtn{
-	cursor: pointer;
-	width: 20%;
-	position: fixed;
-	margin-top: -2%;
-}
-
-#soloBtn:hover{
-	color: black;
-}
-
-.colabCard{
-	margin-top: -373px;
-	height: 480px;
-	width:60%;
-	margin-left: 420px;
- 	background-color: transparent;
- 	border-right: 5px solid black;  
- 	position: absolute;
- 	opacity: 1;
- 	transition: all 2s linear;
- 	padding: 10px;
- 	overflow: auto;
-}
-
-.colabText{
-	margin-left: 5%;
-}
-
-.pushColab{
-	 margin-left: 76%;
-
-
-}
-
-.colabWidth{
-	width: 13%;
-	overflow-x: hidden;
-}
-
-
-#colabBtn{
-	cursor: pointer;
-	width: 20%;
-	position: fixed;
-	margin-top: -2%
-}
-
-#colabBtn:hover{
-	color: black;
-}
-
-.improvCard{
-	margin-top: -365px;
-	height: 480px;
-	width:60%;
-	margin-left: 37%;
- 	background-color: transparent;
- 	border-right:5px solid black;  
- 	position: absolute;
- 	opacity: 1;
- 	transition: all 2s linear;
- 	overflow: auto;
-}
-
-.improvWidth{
-	width: 12%;
-	transition: all 2s linear;
-	overflow-x: hidden;
-	background-color: transparent;
-}
-
-.pushImprov{
-	transition: all 2s linear;
-	margin-left: 90%!important;
-}
-
-/*.pushImprovColab{
-	transition: all 2s linear;
-	margin-left: 88%;
-}*/
-
-#improvBtn{
-	cursor: pointer;
-	width: 20%;
-	position: fixed;
-	margin-top: -2%
-}
-
-
-#improvBtn:hover{
-	color: black;
-}
-
-.improvText{
-	/*margin-left: 35%;*/
     
-    margin-left: 5%;
 
-}
-
-.discCard{
-	margin-top: -371px;
-	height: 480px;
-	width:60%;
-	margin-left: 51%;
- 	background-color:white;
- 	border-right: 5px solid black;  
- 	position: absolute;
- 	opacity: 1;
- 	transition: all 2.5s linear;
- 	float:left;
-	
-	overflow-y: auto;
-	
-}
-
-.pushDisc{
-	margin-left: 103%;
-}
-
-.discWidth{
-	width: 11%;
-	transition: all 2s linear;
-	overflow-x: hidden;
-}
-
-.disco{
-	display: box;
-	flex-direction: column;
-}
-
-#discBtn{
-	cursor: pointer;
-	width: 20%;
-	position: fixed;
-	margin-top: -2%
-}
-
-#discBtn:hover{
-	color: black;
-	
-}
-
-.disco1{
-	background-image: url(https://images.unsplash.com/photo-1511044287905-703f02523985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-	border-radius: 50%;
-	margin:10px;
-	height: 100px;
-	width: 100px;
-	background-position: center;
-
-
-}
-
-.disco2{
-	background-image: url(https://images.unsplash.com/photo-1505248207594-9f9912dda70a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-	border-radius: 50%;
-	margin:10px;
-	height: 100px;
-	width: 100px;
-	background-position: center;
-
-}
-
-.pesqCard{
-	margin-top: -25%;
-	height: 480px;
-	width:70%;
-	margin-left: 12%;
- 	background-color: rgba(255, 255, 255, .7);
- 	/*border: 5px solid black;  */
- 	position: absolute;
- 	opacity: 1;
- 	transition: opacity 1s linear;
-}
-
-.contatoCard{
-	margin-top: -1263px;
-	height: 480px;
-	width:70%;
-	margin-left: 300px;
- 	background-color: rgba(255, 255, 255, .7);
- 	border: 5px solid black;  
- 	position: absolute;
- 	opacity: 1;
- 	transition: opacity 1s linear;
-}
-
-.transparent{
-	opacity: 0;
-	z-index: -1000;
-	
-}
-
-.displayNone{
-	display: none;
-}
-
-
-
-.cursorDefault{
-	cursor: default;
-	pointer-events: none;
-}
-
-
-.spaceP{
-	height: 10px;
-}
-
-
-
-.social{
-	margin-top: 58px;
-	transition:1s ease-in;
-	/*margin-left: 180%;*/
-}
-
-.socialMedia{
-	
-    padding: initial;
+    $(".card").removeClass("visible");
+    $(".sobreCard").removeClass("visible");
+    $(".contatoCard").removeClass("visible");
    
-    width: 300px;
-	z-index: 10000;
+    
+    $(".discCard").removeClass("visible");
+    $(".pesqCard").removeClass("visible");
+
+
+} );
+
+// $('#colab').click( function() {
+//     $(".colabCard").toggleClass("transparent");
+//     $(".colabCard").toggleClass("visible");
+//     if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+//         $(".card").addClass("transparent");
+//         $(".sobreCard").addClass("transparent")
+//         $(".soloCard").addClass("transparent")
+//         $(".contatoCard").addClass("transparent")
+//         $(".improvCard").addClass("transparent");
+//         $(".discCard").addClass("transparent");
+//         $(".pesqCard").addClass("transparent");
+//     }
+
+//     $(".card").removeClass("visible");
+//     $(".sobreCard").removeClass("visible");
+//     $(".soloCard").removeClass("visible");
+//     $(".contatoCard").removeClass("visible");
+//     $(".improvCard").removeClass("visible");
+//     $(".discCard").removeClass("visible");
+//     $(".pesqCard").removeClass("visible");
+// } );
+
+// $('#improv').click( function() {
+//     $(".improvCard").toggleClass("transparent");
+//     $(".improvCard").toggleClass("visible");
+//     if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+//         $(".card").addClass("transparent");
+//         $(".sobreCard").addClass("transparent");
+//         $(".soloCard").addClass("transparent");
+//         $(".contatoCard").addClass("transparent");
+//         $(".colabCard").addClass("transparent");
+//         $(".discCard").addClass("transparent");
+//         $(".pesqCard").addClass("transparent");
+//     }
+
+//     $(".card").removeClass("visible");
+//     $(".sobreCard").removeClass("visible");
+//     $(".soloCard").removeClass("visible");
+//     $(".contatoCard").removeClass("visible");
+//     $(".colabCard").removeClass("visible");
+//     $(".discCard").removeClass("visible");
+//     $(".pesqCard").removeClass("visible");
+// } );
+
+// $('#disc').click( function() {
+//     $(".discCard").toggleClass("transparent");
+//     $(".discCard").toggleClass("visible");
+//     if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+//         $(".card").addClass("transparent");
+//         $(".sobreCard").addClass("transparent");
+//         $(".soloCard").addClass("transparent");
+//         $(".contatoCard").addClass("transparent");
+//         $(".colabCard").addClass("transparent");
+//         $(".improvCard").addClass("transparent");
+//         $(".pesqCard").addClass("transparent");
+
+//     }
+
+//     $(".card").removeClass("visible");
+//     $(".sobreCard").removeClass("visible");
+//     $(".soloCard").removeClass("visible");
+//     $(".contatoCard").removeClass("visible");
+//     $(".colabCard").removeClass("visible");
+//     $(".improvCard").removeClass("visible");
+//     $(".pesqCard").removeClass("visible");
+// } );
+
+$('#pesq').click( function() {
+
+    // if(!$("#pesq").hasClass("selected")){
+    //     $("#pesq").addClass("selected");
+    // }
+    // else{
+    //     $("#news").removeClass("selected");
+    //     $("#sobre").removeClass("selected");
+    //     $("#work").removeClass("selected");
+    //     $("#pesq").removeClass("selected");
+       
+    // }
+
+    $(".pesqCard").toggleClass("transparent");
+    $(".pesqCard").toggleClass("visible");
+    if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")){
+        $(".card").addClass("transparent");
+        $(".sobreCard").addClass("transparent");
+        $(".soloCard").addClass("transparent");
+        $(".contatoCard").addClass("transparent");
+        $(".colabCard").addClass("transparent");
+        $(".improvCard").addClass("transparent");
+        $(".discCard").addClass("transparent");
+
+    }
+
+    $(".card").removeClass("visible");
+    $(".sobreCard").removeClass("visible");
+    $(".soloCard").removeClass("visible");
+    $(".contatoCard").removeClass("visible");
+    $(".colabCard").removeClass("visible");
+    $(".improvCard").removeClass("visible");
+    $(".discCard").removeClass("visible");
+} );
+
+
+
+
+$('#contato').click( function() {
+    $(".contatoCard").toggleClass("transparent");
+    $(".contatoCard").toggleClass("visible");
+    if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+        $(".card").addClass("transparent");
+        $(".sobreCard").addClass("transparent");
+        $(".soloCard").addClass("transparent");
+        $(".improvCard").addClass("transparent");
+        $(".colabCard").addClass("transparent");
+        $(".discCard").addClass("transparent");
+        $(".pesqCard").addClass("transparent");
+    }
+
+    $(".card").removeClass("visible");
+    $(".sobreCard").removeClass("visible");
+    $(".soloCard").removeClass("visible");
+    $(".improvCard").removeClass("visible");
+    $(".colabCard").removeClass("visible");
+    $(".discCard").removeClass("visible");
+    $(".pesqCard").removeClass("visible");
+} );
+
+
+
+
+
+
+$("#inicio").click( function(){
+	$(".navbar").removeClass("cursorDefault");
+	$(".navbar").addClass("fadeIn");
+	$(".inicio").addClass("transparent");
+    if($(".socialMedia").hasClass("transparent")){
+        $(".socialMedia").removeClass("transparent");
+        $(".social").removeClass("displayNone");
+        $(".secondNav").removeClass("displayNone");
+        $(".social").removeClass("fade");
+
+    }
+    
+	setTimeout(function(){
+	 $(".inicio").addClass("displayNone");
+	 }, 1000);
 	
-	
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	transition: 1s linear;
-}
+});
+
+
+// language selector
+
+
+$("#begin").click( function(){
+    $(".en").toggleClass("displayNone");
+    $(".navbar").removeClass("cursorDefault");
+    $(".navbar").addClass("fadeIn");
+    $(".inicio").addClass("transparent");
+   
+    $(".pt").addClass("displayNone");
+    if($(".socialMedia").hasClass("transparent")){
+        $(".socialMedia").removeClass("transparent");
+        $(".social").removeClass("displayNone");
+        $(".secondNav").removeClass("displayNone");
+        $(".social").removeClass("fade");
+       
+
+
+    }
+
+    
+    setTimeout(function(){
+     $(".inicio").addClass("displayNone");
+     }, 1000);
+});
+
+// $("#comezar").click( function(){
+//     $(".es").toggleClass("displayNone");
+//     $(".navbar").removeClass("cursorDefault");
+//     $(".navbar").addClass("fadeIn");
+//     $(".inicio").addClass("transparent");
+//     $(".pt").addClass("displayNone");
+//     if($(".socialMedia").hasClass("transparent")){
+//         $(".socialMedia").removeClass("transparent");
+//          $(".social").removeClass("displayNone");
+//          $(".social").removeClass("fade");
+
+
+//     }
+
+    
+//     setTimeout(function(){
+//      $(".inicio").addClass("displayNone");
+//      }, 1000);
+// });
 
 
 
 
-.socialMedia ul{
-	
-	width: 100%;
-	text-align: center;
-
-}
+// string test
 
 
+function String(id, startPoint, endPoint) {
+    //ctor
+    this.canvas = document.getElementById(id);
+    this.ctx = this.canvas.getContext('2d');
+    
+    // console.dir(this.canvas);
+    this.canvas.width = this.canvas.clientWidth;
+    this.canvas.height = this.canvas.clientHeight;
 
-.selected{
-	color: black!important;
-	opacity: 1;
+    this.startPoint = startPoint;
+    this.endPoint = endPoint;
+    this.controlPoint = new Point(0,0);
+    this.lastMouseX = this.controlPoint.x;
+    this.lastMouseY = this.controlPoint.y;
+    this.count = 0;
+    this.damping = 0.98;
 
-
-}
-
-
-
-.fade{
-	margin-left: -1000px;
-	
-}
-
-
-@media (max-width: 800px) {
-	nav {
-		padding: 20px 50px;
-		flex-direction: column;
-	}
-
-	
-}
-
-/*****************************************underline thingy********************************/
-
-.underline {
-  display: inline!important;
-  position: relative!important;
-  overflow: hidden!important;
+    this.finishWave = false;
+    //add event listener
+    var self = this;
+    this.canvas.addEventListener('mousemove',  function(pos) { 
+        console.dir(pos);
+        self.mouseMove(self, pos) 
+    }, false);
 }
 
-.underlineLeft:after{
-  content: ""!important;
-  position: absolute!important;
-  z-index: -1!important;
-  left: 0!important;
-  right: 100%!important;
-  bottom: 2px!important;
-  background: red!important;
-  height: 4px!important;
-  transition-property: left right!important;
-  transition-duration: 0.8s!important;
-  transition-timing-function: ease-out!important;
-}
-.underlineLeft:hover:after,
-.underlineLeft:focus:after,
-.underlineLeft:active:after {
-  right: 0!important;
-}
-/*
-string stuff*/
+String.prototype.drawArc = function(startPoint, thirdPoint, endPoint, ctx){
+    var ctx = ctx;
 
-canvas {
-	background-color: #fff;  
-	margin: auto;
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	margin-right:-200px;
+    var dy1 = thirdPoint.y - startPoint.y;
+    var dx1 = thirdPoint.x - startPoint.x;
+    var dy2 = endPoint.y - thirdPoint.y;
+    var dx2 = endPoint.x - thirdPoint.x;
 
-}
+    var aSlope = dy1/dx1;
+    var bSlope = dy2/dx2;  
 
 
-/*canvas{
-  width: 400px;
-  height: 300px;
-  background: #ffa0a0;
-  margin: auto;
-  display: block;
-  margin-top: 20px;
-}*/
+    var centerX = (aSlope*bSlope*(startPoint.y - endPoint.y) + bSlope*(startPoint.x + thirdPoint.x)
+        - aSlope*(thirdPoint.x+endPoint.x) )/( 2* (bSlope-aSlope) );
+    var centerY = -1*(centerX - (startPoint.x+thirdPoint.x)/2)/aSlope +  (startPoint.y+thirdPoint.y)/2;
+    
+    // var centerX = (aSlope*bSlope*(y0 - y2) + bSlope*(x0 + x1)
+    //     - aSlope*(x1+x2) )/( 2* (bSlope-aSlope) );
+    // var centerY = -1*(centerX - (x0+x1)/2)/aSlope +  (y0+y1)/2;
+    var r = dist(centerX, centerY, startPoint.x, startPoint.y)
 
-figure.snip1321 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #000000;
-  text-align: center;
-  -webkit-perspective: 50em;
-  perspective: 50em;
+    var angle = Math.atan2(centerX-startPoint.x, centerY-startPoint.y);
+
+    // console.log(angle);
+    if (!angle || this.finishWave){
+        ctx.beginPath();
+        ctx.moveTo(startPoint.x, startPoint.y);
+        ctx.lineTo(endPoint.x, endPoint.y);
+        // this.finishWave = true;
+    } else if (!this.finishWave){
+        if( angle > Math.PI/2) {
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, r, Math.PI * 1.5-angle, Math.PI * 1.5 + angle, true);
+        } else {
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, r, Math.PI * 1.5-angle, Math.PI * 1.5 + angle, false);
+        }
+    }
+
+    // ctx.rect(centerX, centerY, 2, 2);
+    // ctx.rect(startPoint.x, startPoint.y, 2, 2);
+    // ctx.rect(endPoint.x, endPoint.y, 2, 2);
+    ctx.stroke();
+
 }
-figure.snip1321 * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-figure.snip1321 img {
-  max-width: 100%;
-  vertical-align: top;
-}
-figure.snip1321 figcaption {
-  top: 50%;
-  left: 20px;
-  right: 20px;
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
-}
-figure.snip1321 h2,
-figure.snip1321 h4 {
-  margin: 0;
-}
-figure.snip1321 h2 {
-  font-weight: 600;
-}
-figure.snip1321 h4 {
-  font-weight: 400;
-  text-transform: uppercase;
-}
-figure.snip1321 i {
-  font-size: 32px;
-}
-figure.snip1321:after {
-  background-color: #ffffff;
-  position: absolute;
-  content: "";
-  display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0;
-}
-figure.snip1321 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 1;
-}
-figure.snip1321:hover figcaption,
-figure.snip1321.hover figcaption {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
-  opacity: 0.9;
-}
+String.prototype.draw = function(){
+    
+    // draw stuff
+    var r = circleCenter(   new Point(this.startPoint.x, this.startPoint.y), 
+                            new Point(this.controlPoint.x, this.controlPoint.y), 
+                            new Point(this.endPoint.x, this.endPoint.y) ).r;
+
+    if( r > 600 
+        && this.controlPoint.x > this.startPoint.x
+        && this.controlPoint.x < this.endPoint.x ){
+        // console.log(r);
+
+        this.drawArc(this.startPoint, this.controlPoint, this.endPoint, this.ctx);
+        this.lastMouseX = this.controlPoint.x;
+        this.lastMouseY = this.controlPoint.y;
+        this.count = 0;
+        this.finishWave = false;
+
+    } else {
+        var x = this.lastMouseX;
+        var y = this.startPoint.y+(this.lastMouseY-this.startPoint.y)
+            *Math.cos(this.count/5*Math.PI)*Math.pow(this.damping, this.count);
+
+        if ( Math.pow(this.damping, this.count) < 0.0001) {
+            this.finishWave = true;
+        }
+        var wavePoint = new Point(x, y);
+        this.drawArc(this.startPoint, wavePoint, this.endPoint, this.ctx);
+        this.count++;
+    }
+};
+
+String.prototype.clear = function(){
+    // clear
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+};
 
 
-/*body {
-  margin: 0; 
-  padding: 0;
-  background: #111;
-  height: 100%;
-}*/
-/*.diy-slideshow{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  max-height: 100%;
-  background-position: center;
-}
-figure{
-  position: absolute;
-  opacity: 0;
-  transition: 1s opacity;
-}
-figcaption{
-  position: absolute;
-  font-family: sans-serif;
-  font-size: .8em;
-  bottom: .75em;
-  right: .35em;
-  padding: .25em;
-  color: #fff;
-  background: rgba(0,0,0, .25);
-  border-radius: 2px;
-}
+String.prototype.update = function(){
+    // update
+    
+};
 
-figure.show{
-  opacity: 1;
-  position: static;
-  transition: 1s opacity;
-}
-.next, .prev{
-  color: #fff;
-  position: absolute;
-  background: rgba(0,0,0, .6);
-  top: 50%;
-  z-index: 1;
-  font-size: 2em;
-  margin-top: -.75em;
-  opacity: .3;
-  user-select: none;
-}
-.next:hover, .prev:hover{
-  cursor: pointer;
-  opacity: 1;
-}
-.next{
-  right: 0;
-  padding: 10px 5px 15px 10px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-.prev{
-  left: 0;
-  padding: 10px 10px 15px 5px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
+String.prototype.mouseMove = function(self, pos){
+    self.controlPoint.x = pos.layerX;
+    self.controlPoint.y = pos.layerY;   
+};
+
+/*Created By Wenting Zhang 
 */
 
-/* Style the buttons */
-.btn:active {
- font-weight: 600;
+var dist = function(x, y, x0, y0){
+    return Math.sqrt((x -= x0) * x + (y -= y0) * y);
+};
+
+var circleCenter = function(startPoint, thirdPoint, endPoint){
+    var dy1 = thirdPoint.y - startPoint.y;
+    var dx1 = thirdPoint.x - startPoint.x;
+    var dy2 = endPoint.y - thirdPoint.y;
+    var dx2 = endPoint.x - thirdPoint.x;
+
+    var aSlope = dy1/dx1;
+    var bSlope = dy2/dx2;  
+
+
+    var centerX = (aSlope*bSlope*(startPoint.y - endPoint.y) + bSlope*(startPoint.x + thirdPoint.x)
+        - aSlope*(thirdPoint.x+endPoint.x) )/( 2* (bSlope-aSlope) );
+    var centerY = -1*(centerX - (startPoint.x+thirdPoint.x)/2)/aSlope +  (startPoint.y+thirdPoint.y)/2;
+    var r = dist(centerX, centerY, startPoint.x, startPoint.y)
+
+    // return [centerX, centerY, r];
+    return {
+        x: centerX,
+        y: centerY,
+        r: r
+    };
 }
 
-/* Style the active class, and buttons on mouse-over */
-.active, .btn:hover {
-	color: black!important;
-	opacity: 1;
-	right: 0!important;
-
-
-}
-
-.active, .btn:hover:after,
-.active, .btn:focus:after,
-.active, .btn::active:after {
-  color: black!important;
-	opacity: 1;
-	right: 0!important;
+var Point = function (x,y){
+    this.x=x;
+    this.y=y;
 }
 
 
+window.requestAnimFrame = (function(callback) {
+    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+    function(callback) {
+      window.setTimeout(callback, 10000 / 60);
+    };
+})();
+
+var myString = new String('myCanvas', new Point(300, 70.5), new Point(900, 70.5));
+(function animate() {   
+    // update
+    myString.update();
+    // clear
+    myString.clear();
+    
+    // draw stuff
+    // console.log("run every frame");
+    myString.draw();
 
 
-/*========================================================================================================================*/
+    // request new frame
+    requestAnimFrame(function() {
+      animate();
+    });
+})()
+
+// disco spining thing
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
 
 
-/*custom scroll bar
-*/
-/* width */
-::-webkit-scrollbar {
-  width: 16px;
+
+// $("#news").click(function(){
+//     if($(".menu-item").hasClass("selected")){
+//         $("menu-item").removeClass("selected");
+//     }
+    
+//         $("#news").toggleClass("selected");
+    
+    
+// });
+
+// $("#sobre").click(function(){
+//     if($(".menu-item").hasClass("selected")){
+//         $("menu-item").removeClass("selected");
+//     }
+//     $("#sobre").toggleClass("selected");
+// });
+
+// $("#solo").click(function(){
+//     if($(".menu-item").hasClass("selected")){
+//         $("menu-item").removeClass("selected");
+//     }
+//     $("#solo").toggleClass("selected");
+// });
+
+// $("#colab").click(function(){
+//     if($(".menu-item").hasClass("selected")){
+//         $("menu-item").removeClass("selected");
+//     }
+//     $("#colab").toggleClass("selected");
+// });
+
+// $("#news").click(function(){
+//     if($(".menu-item").hasClass("selected")){
+//         $("menu-item").removeClass("selected");
+//     }
+//     $("#news").toggleClass("selected");
+// });
+
+// $("#news").click(function(){
+//     if($(".menu-item").hasClass("selected")){
+//         $("menu-item").removeClass("selected");
+//     }
+//     $("#news").toggleClass("selected");
+// });
+
+// $("#news").click(function(){
+//     if(!$("#news").hasClass("selected")){
+//         $("#news").addClass("selected");
+//     }
+//     else{
+//         $("#news").removeClass("selected");
+//     }
+// });
+
+
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("menu");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0 grey; 
- 	
+
+
+
+
+$("#work").click(function(){
+    $(".soloCard").addClass("noWidth");
+    $(".colabCard").addClass("colabWidth");
+    $(".improvCard").addClass("improvWidth");
+    $(".discCard").addClass("discWidth");
+    if($(".improvCard").hasClass("visible")){
+        $(".improvCard").removeClass("transparent");
+    }else{
+        $(".improvCard").addClass("transparent");
+    }
+    
+});
+
+function soloPush(){
+      $(".soloCard").toggleClass("noWidth");
+    $(".colabCard").addClass("pushColab");
+    $(".colabCard").addClass("colabWidth");
+    $(".improvCard").addClass("improvWidth");
+    $(".improvCard").addClass("pushImprov");
+     $(".discCard").addClass("discWidth");
+    $(".discCard").addClass("pushDisc");
+   
+
+    if($(".improvCard").hasClass("pushImprov")||$(".colabCard").hasClass("pushColab")){
+        $(".improvCard").removeClass(".pushImprov");
+        $(".colabCard").removeClass(".pushColab");
+    }
+
 }
+
+function closeVideo(){
+    $(".videoOne").addClass("heightZero");
+    $(".videoTwo").addClass("heightZero");
+    $(".videoThree").addClass("heightZero");
+    $(".videoColabOne").addClass("heightZero");
+    $(".videoImprovOne").addClass("heightZero");
+}
+
+
+
+$("#soloBtn").click(function(){
+  
+     if(true){
+        closeVideo();
+
+     }
+     soloPush();
+  
  
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: red; 
- /* border-radius: 10px;*/
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
-
-/*============================================================================================================================================================*/
-
-
-
-																				/*		palavras bio*/
-
-.wordsWrap{
-	display: flex;
-	height: 100%;
-	/*width:50%;*/
-	margin-left: -100%;
-/*	margin-top: 0%;*/
-}
-
-.words{
-	padding: 100px;
-	flex-direction: row;
-	white-space: nowrap;
-	overflow: hidden;
-
-	
-}
-.bioLine{
-	margin:  70px;
-}
-
-.word{
-	border-radius: 50%;
-	padding: 10px;
-	opacity: 0.9;
-	transition: all 1s linear;
-
-}
-
-.word:hover{
-	opacity: 1;
-	transition: all 1s linear;
-	padding: 70px;
-
-}
-
-.roma{
-	height: 80px;
-	width: 80px;
-	font-size: 2em;	
-	transition: all 1s ease-out!important;
-	border-radius: 50%;
-	transform: scale(1);
-	
-}
-
-
-
-.roma:hover{
-	opacity: 1;
-	/*margin: 30px;*/
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s ease-out!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
-
-
-}
-
-.nylon{
-	height: 20px;
-	font-size: 2em;	
-}
-
-.nylon:hover{
-	opacity: 1;
-	/*margin: 30px;*/
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
-
-
-}
-
-
-/*.metacarpos{
-	height: 20px;
-	font-size: 2em;	
-}
-.metacarpos:hover{
-	opacity: 1;
-	margin: 50px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-
-
-}*/
 
+});
 
-.maca{
-	height: 20px;
-	font-size: 2em;	
+function colabPush(){
+     $(".colabCard").toggleClass("colabWidth");
+    $(".improvCard").addClass("pushImprov");
+    $(".improvCard").addClass("improvWidth");
+    $(".soloCard").addClass("noWidth");
+    $(".discCard").addClass("discWidth");
+    $(".discCard").addClass("pushDisc");
+    if($(".colabCard").hasClass("pushColab")||$(".improvCard").hasClass(".pushImprovColab")){
+        $(".improvCard").removeClass(".pushImprovColab");
+        $(".colabCard").removeClass("pushColab");
+    }
+    
 }
 
-.maca:hover{
-	opacity: 1;
-	/*margin: 30px;*/
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+$("#colabBtn").click(function(){
+    closeVideo();
+   colabPush();
 
+});
 
-}
-
-
-.breu{
-	height: 20px;
-	font-size: 2em;	
-}
-
-.breu:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
-
-
-}
-
-
-.mate{
-	height: 20px;
-	font-size: 2em;	
-}
-
-.mate:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
-
-
-}
-
-
-.bigorna{
-	height: 20px;
-	font-size: 2em;	
-}
-
-.bigorna:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+function improvPush(){
+      $(".improvCard").toggleClass("improvWidth");
+    $(".improvCard").removeClass("pushImprov");
+    $(".improvCard").removeClass("pushImprovColab");
+     $(".soloCard").addClass("noWidth");
+    $(".discCard").addClass("discWidth");
+    $(".discCard").addClass("pushDisc");
+    // $(".improvCard").removeClass(".pushImprov");
+    // $(".colabCard").addClass("pushColab");
+    $(".soloCard").addClass("noWidth");
+    $(".colabCard").addClass("colabWidth");
+    if($(".improvCard").hasClass("pushColab")||$(".colabCard").hasClass("pushColab")||$(".discCard").hasClass("pushDisc")){
+        $(".improvCard").removeClass("pushImprov");
+        $(".colabCard").removeClass("pushColab");
+        // $(".discCard").removeClass("pushDisc");
 
-
-}
-
-.borracha{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-
-.borracha:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
-
-
-}
-
-
-.parafusos{
-	height: 20px;
-	font-size: 2em;	
-	
+        // $(".colabCard").removeClass("pushColab");
+    } 
 }
-.parafusos:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+$("#improvBtn").click(function(){
+     closeVideo();
+     improvPush();
 
-}
-
-.anis{
-	height: 20px;
-	font-size: 2em;	
-	
-}
+});
 
-.anis:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+function discPush(){
+     $(".discCard").toggleClass("discWidth");
+    $(".discCard").removeClass("pushDisc");
+    $(".discCard").removeClass("pushImprov");
+    // $(".improvCard").removeClass(".pushImprov");
+    // $(".colabCard").addClass("pushColab");
+    $(".soloCard").addClass("noWidth");
+    $(".colabCard").addClass("colabWidth");
+    $(".improvCard").addClass("improvWidth");
+    if($(".improvCard").hasClass("pushColab")||$(".colabCard").hasClass("pushColab")||$(".pushImprov").hasClass("pushImprov")){
+        $(".improvCard").removeClass("pushImprov");
+        $(".colabCard").removeClass("pushColab");
+        // $(".colabCard").removeClass("pushColab");
+    }
 
-
-}
-.tomilho{
-	height: 20px;
-	font-size: 2em;	
-	
 }
-.tomilho:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+$("#discBtn").click(function(){
+   closeVideo();
+   discPush();
+    
 
-}
+});
 
-.cranio{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.cranio:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+// var count=0;
 
+// ||$("soloCard").hasClass("noWidth")
 
-}
 
-.suina{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.suina:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+function videoState(){
+    if($(".video").hasClass("open")){
+        $(".video").addClass("heightZero");
+        $(".video").removeClass("open");
 
+    }else{
+        $(".video").removeClass("open");
 
-}
+    }
 
 
-.arruelas{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.arruelas:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
 
-}
 
-.hd{
-	height: 20px;
-	font-size: 2em;	
-	
 }
-.hd:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+function soloState(){
+    $(".soloCard").toggleClass("open");
+    if(!($(".soloCard").hasClass("open"))){
+        $(".soloCard").addClass("open");
+         videoState();
+        soloPush();
+ }
+}
+
+// function colabState(){
+//     $(".colabCard").toggleClass("open");
+//     if(!($(".colabCard").hasClass("open"))){
+//         $(".colabCard").addClass("open");
+//          videoState();
+//         colabPush();
+//  }
+// }
 
-}
 
-.ceramica{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.ceramica:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+// function openCheck(id){
+//     var clickedId=$(id).click(function(idClick){
+//         if(id!=idClick){
+//             videoState();
+//         }
+//     });
+// }
 
-}
+var previousTarget=null;
 
-.martelo{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.martelo:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+
 
-}
 
-.lampadas{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.lampadas:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+$(".listenOneBtn").click(function(){
+    
+ if(this===previousTarget||(!$(".soloCard").hasClass("noWidth"))) {
+        // alert("You've clicked this element twice.");
+        videoState();
+    }
+    else{
+        soloPush();
+    }
 
-}
+    previousTarget=this;
 
-.camomila{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.camomila:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+   
+   closeVideo();
 
+$(".videoOne").toggleClass("heightZero");
+    if($(".videoOne").hasClass("open")){
+        $(".videoOne").addClass("heightZero");
+    }
 
-}
+     return false;
+});
+
 
-.costelas{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.costelas:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+// $(".listenOneBtn").click(function(event){
+//     soloState();
+    
+        // $(".soloCard").addClass("noWidth");
+       // videoState()
+         
+        // openCheck();
+    
+     // videoState();
 
+     // if(workTabs.tabs.soloTab.soloPlayers[0]!=true){
+     // soloPush();
+     // }
+    // $(".videoOne").toggleClass("heightZero");
+    // if($(".videoOne").hasClass("open")){
+    //     $(".videoOne").addClass("heightZero");
+    // }
 
-}
+    // if(count>=1){
+    //     soloPush()
+    //     workTabs.tabs.soloTab.soloPlayers[0]=false;
+    //     count++;
+    // if(workTabs.tabs.soloTab.soloPlayers[0]!=true){
+    //     count=0;
+         
+         
+    // }
+    
+        
+        
+    // }
+   
+     // return workTabs.tabs.soloTab.soloPlayers[0]=true;
 
-.alecrim{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.alecrim:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+// });
 
-}
+$(".listenTwoBtn").click(function(){
 
-.estribo{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.estribo:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+    if(this===previousTarget||(!$(".soloCard").hasClass("noWidth"))) {
+        // alert("You've clicked this element twice.");
+        videoState();
+    }
+    else{
+        soloPush();
+    }
 
+    previousTarget=this;
+   
+    closeVideo();
 
-}
 
-.tibia{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.tibia:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+    $(".videoTwo").toggleClass("heightZero");
+    if($(".videoTwo").hasClass("open")){
+        $(".videoTwo").addClass("heightZero");
+    }
+   
 
 
-}
+    // return workTabs.tabs.soloTab.soloPlayers[1]=true;
+    return false;
+});
 
-.louro{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.louro:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+$(".listenThreeBtn").click(function(){
 
+    if(this===previousTarget||(!$(".soloCard").hasClass("noWidth"))) {
+        // alert("You've clicked this element twice.");
+        videoState();
+    }
+    else{
+        soloPush();
+    }
 
-}
+    previousTarget=this;
 
-.pedras{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.pedras:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+    closeVideo();
 
+    $(".videoThree").toggleClass("heightZero");
+    if($(".videoThree").hasClass("open")){
+        $(".videoThree").addClass("heightZero");
+    }
+   
 
-}
 
-.ervaDoce{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.ervaDoce:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+    // return workTabs.tabs.soloTab.soloPlayers[1]=true;
+    return false;
+});
 
+$(".listenColabOneBtn").click(function(){
+    // colabState();
+    // if(verifier()=true;){
+       if(this===previousTarget||(!$(".colabCard").hasClass("colabWidth"))) {
+        // alert("You've clicked this element twice.");
+        videoState();
+    }
+    else{
+        colabPush();
+    }
 
-}
+    previousTarget=this;
 
+   
+   closeVideo();
 
-.agulhasDeTrico{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.agulhasDeTrico:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+$(".videoColabOne").toggleClass("heightZero");
+    if($(".videoColabOne").hasClass("open")){
+        $(".videoColabOne").addClass("heightZero");
+    }
 
+     return false;
+});
 
-}
 
-.canela{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.canela:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+$(".listenImprovOneBtn").click(function(){
+    if(this===previousTarget||(!$(".improvCard").hasClass("improvWidth"))) {
+        // alert("You've clicked this element twice.");
+        videoState();
+    }
+    else{
+        improvPush();
+    }
 
-}
+    previousTarget=this;
 
-.croche{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.croche:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+   
+   closeVideo();
 
 
-}
 
-.vertebras{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.vertebras:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+    $(".videoImprovOne").toggleClass("heightZero");
+    if($(".videoImprovOne").hasClass("open")){
+        $(".videoImprovOne").addClass("heightZero");
+    }
 
+   return false;
+});
 
-}
 
-.carqueja{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.carqueja:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+// return playing === true;
 
 
-}
 
-.sacro{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.sacro:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+//========================================= funcao seletora de video aberto ===============================================
 
 
-}
 
-.metatarsos{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.metatarsos:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
 
+// definir abas de work como objetos que tem uma lista de ids???
 
-}
 
-.obsidiana{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.obsidiana:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+// 
+//     musicArr: "musicArr": 
+//             [
+//               "playing"= {
+//                           isPlaying: false
+//                          }
+//              ]
+// };
 
 
-}
 
-.denteDeLeao{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.denteDeLeao:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-	cursor: pointer;
+// var soloPlayers = [player, player, player];
 
+var player = false;
 
-}
 
-.slide{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.slide:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
 
 
-}
+// var soloTab ={
+//    "players":soloPlayers
+            
+// };
 
 
-.ulna{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.ulna:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
 
 
-}
 
-.manjericao{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.manjericao:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
+// var playerOne ={};
 
 
-}
+// var colab ={"player":[.isPlaying=false]};
+// var improv={"player":[.isPlaying=false]};
+// var disco={"player":[.isPlaying=false]};
 
-.salsinha{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.salsinha:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
 
 
+var workTabs = {
+    "tabs": {
+             "soloTab": {
+                         "soloPlayers":[player, player, player]
+                        // cada tab tem um array de players e cada player eh um objeto com numero e isPlaying
+             // colab,
+             // improv,
+             // disco
+                         }
+            }
 }
+   //um array de objetos com uma categoria .playing = true or false
 
-.superball{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.superball:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
 
 
-}
+function verifier(element){
+workTabs.tabs.soloTab.soloPlayers.forEach(function(element){
+    // console.log(element);
 
-.cenoura{
-	height: 20px;
-	font-size: 2em;	
-	
+    
+    return element
+});
+    return element
 }
-.cenoura:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
 
 
-}
-
-.dentes{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.dentes:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
+ // if(!(workTabs.tabs.soloTab.soloPlayers.length>=4))
 
 
-}
+function isPlaying(){
+    if(workTabs.tabs.soloTab.soloPlayers.some(verifier)==true){
 
-.bacia{
-	height: 20px;
-	font-size: 2em;	
-	
+        
+   return "playing";  // comand for adding pushCards and closing videos
 }
-.bacia:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
-
+else{
 
+    soloPush()
+   return "not playing"
 }
-
-.fita{
-	height: 20px;
-	font-size: 2em;	
-	
 }
-.fita:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
 
+// workTabs.tabs.soloTab.soloPlayers.some(verifier)
 
-}
+// definir array de ids
 
-.magnetica{
-	height: 20px;
-	font-size: 2em;	
-	
-}
-.magnetica:hover{
-	opacity: 1;
-	margin: 30px;
-	transform: scale(1.5)!important;
-	color: black;
-	transition: all 1s linear!important;
-	background-color: rgb(255, 255, 255);
+// var playing
 
 
-}
+// function openWindow(id){
 
 
-.largerFont{
-	font-size: 1.3em!important;
-}
+// for each id no array de ids de botoes de musica ou de abas de work
 
 
-/*==========================================================efect part===============================*/
+// musicArr.forEach(function(element){
+//     if(element.id===id){
+//         $()
+//     }
+// });
 
+//if o id for igual ao clicado
 
 
-/*html {
-	font: 100 1.5em sans-serif;
-}
-body {
-	padding: 2em 5em 0em 5em;
-}
+//toggle id open
 
-h1 {
-	font-weight: 100;
-}*/
-
-/*.display {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-gap: 0.1em;
-}*/
-
-/*.HOVER {
-	--width: 100%;
-	--time: 0.7s;
-	position: relative;
-	display: inline-block;
-	height: 1em;
-	padding: 1em;
-
-	color: white;
-	background: #222;
-	overflow: hidden;
-}
+//else
 
-.HOVER text {
-	position: relative;
-	z-index: 5;
-	transition: color var(--time);
-}
+//ids add class heightZero
 
-.HOVER:hover text {
-	color: #222;
-}
-.HOVER span {
-	border-radius: 100%;
-	position: absolute;
-	display: block;
-	content: "";
-	z-index: 0;
-	width: 0;
-	height: 0;
-
-	background: #fff;
-	transform: translate(-50%, -50%);
-	transition: width var(--time), padding-top var(--time);
-}
+//close all abas de work abertas
 
-.HOVER:hover span {
-	width: calc(var(--width)*2.25);
-	padding-top: calc(var(--width)* 2.25);
-}
+// return id;
 
-.HOVER.FLASH:hover text {
-	color: white;
-}
-.HOVER.FLASH span {
-	background: #ff3b3b;
-}
+// }
 
-.animated {
-	--angle: 5deg;
-	animation: shake 0.3s;
-}
-*/
-
-/*===========================================================media selector===========================================================*/
-
-@media screen and (max-width: 900px){
-
-	.inicio{
-		margin-top: -88%;
-		font-size: .7em;
-	}
-
-	body{
-		overflow-y: 100%;
-		height: 100%;
-	}
-
-	.card{
-		margin-top: -19%;
-		height: 80%;
-		margin-left: 16%!important;
-	}
-
-	.inicioBlock{
-		position: absolute;
-		margin-top: 163%;
-		margin-left: 1%;
-	}
-
-	.inicioBlock h1{
-		display: flex;
-	}
-
-	.inicioTitle{
-		transform: rotate(90deg)!important;
-		margin-left: -60%;
-		
-
-	}
-
-	.language{
-		/*margin-top: -3%!important;
-		margin-left:8%;*/
-		position: absolute;
-		margin-left: 31%!important;
-		font-size: 2em!important;
-	}
-		
-
-	.menu{
-		display: block;
-		margin-left: -66%!important;
-		margin-top:-10%;
-	}
-
-	.social{
-		font-size: 1.3em;
-	}
-
-	#secondNav{
-		margin-left: 17%!important;
-	}
 
-}
+// ============================================letters random color==============================================
 
-@media screen and(max-width: 1750px){
-	.improvCard{
-		.margin-left: 40%;
-	}
+$(document).ready(function() {
+$( ".word" ).mouseover(function() {
+// $(".words").css("background",getRandomColor());
 
-	
-}
+$(this).css("background",getRandomColor());
+$(this).css("padding",getRandomPadding());
+// $(this).css("color", "white");
+});
 
 
-@media screen and(max-width: 1650px){
-	.improvCard{
-		.margin-left: 40%;
-	}
 
+function getRandomColor () {
+ var letters = '0123456789ABCDEF'.split('');
+ var color = '#';
+ for (var i = 0; i < 6; i++) {
+     color += letters[Math.floor(Math.random() * 16)];
+ }
+ return color;
+    }
+});
 
+function getRandomPadding(){
+    var min=5; 
+    var max=40;  
+    var random =Math.floor(Math.random() * (+max - +min)) + +min; 
+    
+    return random; 
 }
 
-@media screen and (max-width: 1450px){
 
 
-	.menu{
-		margin-left: 0;
-		font-size: 1.5em;
-	}
 
 
-}
 
-@media screen and (max-width: 1400px){
-	
 
-	.language{
-		margin-left: 0;
-	}
-	.menu{
-		margin-left: 0;
-		font-size: 1.5em;
-	}
 
+// ====================================================================youtube comands=================================================================
 
-}
 
-@media screen and (max-width: 1100px){
-	#myCanvas{
-		display: none;
-	}
 
 
+// =========================================================height and width ==============================================
+var height= window.screen.availHeight
+$("html").css("max-height", height);
 
-}
 
+console.log(height)
+window.screen.availWidth
