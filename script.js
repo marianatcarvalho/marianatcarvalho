@@ -1052,9 +1052,14 @@ else{
 
 $(document).ready(function() {
 $( ".word" ).mouseover(function() {
+// $(".words").css("background",getRandomColor());
+
 $(this).css("background",getRandomColor());
+$(this).css("padding",getRandomPadding());
 // $(this).css("color", "white");
 });
+
+
 
 function getRandomColor () {
  var letters = '0123456789ABCDEF'.split('');
@@ -1066,6 +1071,13 @@ function getRandomColor () {
     }
 });
 
+function getRandomPadding(){
+    var min=5; 
+    var max=40;  
+    var random =Math.floor(Math.random() * (+max - +min)) + +min; 
+    
+    return random; 
+}
 
 
 
@@ -1077,3 +1089,12 @@ function getRandomColor () {
 // ====================================================================youtube comands=================================================================
 
 
+
+
+// =========================================================height and width ==============================================
+var height= window.screen.availHeight
+$("html").css("max-height", height);
+
+
+console.log(height)
+window.screen.availWidth
