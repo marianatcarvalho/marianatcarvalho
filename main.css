@@ -1865,7 +1865,7 @@ h1 {
 
 /*===========================================================media selector===========================================================*/
 
-@media screen and (max-width: 900px ){
+@media screen and (max-width: 900px){
 
 	body{
 		overflow-y: 800px;
@@ -1880,7 +1880,12 @@ h1 {
 
 	.inicioBlock{
 		position: absolute;
-		margin-top: 71%;
+		margin-top: 163%;
+		margin-left: 1%;
+	}
+
+	.inicioBlock h1{
+		display: flex;
 	}
 
 	.inicioTitle{
@@ -1891,8 +1896,10 @@ h1 {
 	}
 
 	.language{
-		margin-top: -3%!important;
-		margin-left:8;
+		/*margin-top: -3%!important;
+		margin-left:8%;*/
+		position: absolute;
+		margin-left: 31%!important;
 		font-size: 2em!important;
 	}
 		
