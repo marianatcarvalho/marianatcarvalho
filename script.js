@@ -1102,7 +1102,9 @@ var width = window.screen.availWidth;
 if(width<=900){
 $("#liNews").click(function(){
     $("#liNews").toggleClass("liOpen");
-    
+    $("#liSobre").removeClass("liOpen");
+    $("#liWork").removeClass("liOpen");
+    $("#liPesq").removeClass("liOpen");
     $(".card").css("margin-top", "-185%");
 
    
@@ -1110,6 +1112,50 @@ $("#liNews").click(function(){
    
 
 });
+
+
+
+$("#liSobre").click(function(){
+    $("#liSobre").toggleClass("liOpen");
+    $("#liNews").removeClass("liOpen");
+    $("#liWork").removeClass("liOpen");
+    $("#liPesq").removeClass("liOpen");
+    $(".sobreCard").css("margin-top", "-185%");
+
+   
+
+   
+
+});
+
+$("#liWork").click(function(){
+    $("#liWork").toggleClass("liOpen");
+    $("#liNews").removeClass("liOpen");
+    $("#liSobre").removeClass("liOpen");
+    $("#liPesq").removeClass("liOpen");
+    $(".workCard").css("margin-top", "-185%");
+
+   
+
+   
+
+});
+
+$("#liPesq").click(function(){
+    $("#liPesq").toggleClass("liOpen");
+    $("#liNews").removeClass("liOpen");
+    $("#liSobre").removeClass("liOpen");
+    $("#liWork").removeClass("liOpen");
+    $(".pesqCard").css("margin-top", "-145%");
+
+   
+
+   
+
+});
+
+
+
 }
 
 
