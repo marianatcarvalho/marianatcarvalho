@@ -1050,34 +1050,34 @@ else{
 
 // ============================================letters random color==============================================
 
-$(document).ready(function() {
-$( ".word" ).mouseover(function() {
-// $(".words").css("background",getRandomColor());
+// $(document).ready(function() {
+// $( ".word" ).mouseover(function() {
+// // $(".words").css("background",getRandomColor());
 
-$(this).css("background",getRandomColor());
-$(this).css("padding",getRandomPadding());
-// $(this).css("color", "white");
-});
+// $(this).css("background",getRandomColor());
+// $(this).css("padding",getRandomPadding());
+// // $(this).css("color", "white");
+// });
 
 
 
-function getRandomColor () {
- var letters = '0123456789ABCDEF'.split('');
- var color = '#';
- for (var i = 0; i < 6; i++) {
-     color += letters[Math.floor(Math.random() * 16)];
- }
- return color;
-    }
-});
+// function getRandomColor () {
+//  var letters = '0123456789ABCDEF'.split('');
+//  var color = '#';
+//  for (var i = 0; i < 6; i++) {
+//      color += letters[Math.floor(Math.random() * 16)];
+//  }
+//  return color;
+//     }
+// });
 
-function getRandomPadding(){
-    var min=5; 
-    var max=40;  
-    var random =Math.floor(Math.random() * (+max - +min)) + +min; 
+// function getRandomPadding(){
+//     var min=5; 
+//     var max=40;  
+//     var random =Math.floor(Math.random() * (+max - +min)) + +min; 
     
-    return random; 
-}
+//     return random; 
+// }
 
 
 
@@ -1092,9 +1092,24 @@ function getRandomPadding(){
 
 
 // =========================================================height and width ==============================================
-var height= window.screen.availHeight
-$("html").css("max-height", height);
+var height= window.screen.availHeight;
+$(document).css("max-height", "100vh");
 
 
 console.log(height)
-window.screen.availWidth
+var width = window.screen.availWidth;
+
+if(width<=900){
+$("#liNews").click(function(){
+    $("#liNews").toggleClass("liOpen");
+    
+    $(".card").css("margin-top", "-185%");
+
+   
+
+   
+
+});
+}
+
+
