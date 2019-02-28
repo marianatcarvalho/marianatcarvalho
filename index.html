@@ -50,13 +50,13 @@
 				<span class="en displayNone">news</span>
 				<!-- <span class="es displayNone">Noticias</span> -->
 			</a></li>
-			<li class="liMenu"><a class="menu-item underline underlineLeft btn" id="sobre" href="#">
+			<li class="liMenu" id="liSobre"><a class="menu-item underline underlineLeft btn" id="sobre" href="#">
 				<span class="pt">bio</span>
 				<span class="en displayNone">bio</span>
 <!-- 				<span class="es displayNone">Sobre</span> -->
 			</a></li>
 			<!-- <li><a class="menu-item underline underlineLeft" id="solo" href="#">solo</a></li> -->
-			<li class="liMenu"><a class="menu-item underline underlineLeft btn" id="work"href="#">
+			<li class="liMenu" id="liWork"><a class="menu-item underline underlineLeft btn" id="work"href="#">
 				<span class="pt">trabalho</span>
 				<span class="en displayNone">work</span>
 				<!-- <span class="es displayNone">colaboraciones</span> -->
@@ -71,7 +71,7 @@
 				<span class="en displayNone">discography</span>
 				<span class="es displayNone">Discografía</span>
 			</a></li> -->
-			<li class="liMenu"><a class="menu-item underline underlineLeft btn" id="pesq"href="#">
+			<li class="liMenu" id="liPesq"><a class="menu-item underline underlineLeft btn" id="pesq"href="#">
 				<span class="pt">pesquisa</span>
 				<span class="en displayNone">research</span>
 				<!-- <span class="es displayNone">Estudios</span> -->
@@ -246,11 +246,12 @@
 								
 							</td>
 						</tr>
-					</table>								   
+					</table>	
+
 				</div>  <!-- =======================copiar ate aqui=================================== -->
 				<div class="noticia">	<!-- ==================copiar daqui ============-->			
 					<table>
-					
+							
 						<tr>
 							<td>
 							<h3>August</h3>
@@ -397,7 +398,8 @@
 	</section>
 
 	<section class="work">
-		<div class="soloCard transparent open">
+		<span class="workCard">
+			<div class="soloCard transparent open">
 
 		
 
@@ -406,6 +408,7 @@
 			
 			<div class="soloText">
 				<h1 id="soloBtn">solo*</h1>
+				<span class="textMobile">
 			    <p>
 					
 
@@ -417,7 +420,7 @@
 					Música #12 (2017)
 					Departamento de Música da ECA-USP, São Paulo.
 					<div>
-						<a href="#" class="music listenOneBtn">Escutar</a>
+						<a href="#" class="music listenOneBtn"><i class="fas fa-play"></i></a>
 						<iframe width="900" height="506" src="https://www.youtube.com/embed/A5FRNl-KbCw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video videoOne heightZero"></iframe>
 					</div>
 					
@@ -445,7 +448,7 @@
 
 
 				</p>
-				
+				</span>
 			</div>
 		</div>
 		<div class="colabCard transparent">
@@ -636,6 +639,8 @@
 						</tr>
 					</table>
 				</div>
+		</span>
+		
 	</section>
 
 	
