@@ -1867,14 +1867,17 @@ h1 {
 
 @media screen and (max-width: 900px){
 
+	
 	.inicio{
 		margin-top: -88%;
 		font-size: .6em;
 	}
 
-	body{
-		overflow-y: 100%;
+	#body{
+		overscroll-behaviour-y:contain;
+		overflow-x:none!important;
 		height: 100%;
+
 	}
 
 	.card{
@@ -1892,6 +1895,7 @@ h1 {
 	.inicioBlock h1{
 		display: flex;
 		margin-left: 10%;
+		font-size: 6em;
 	}
 
 	.inicioTitle{
