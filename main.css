@@ -422,21 +422,11 @@ section {
 
 .work{
 	margin-left: -15%;
-	margin-top: -37%;
+	margin-top: 21%;
 	justify-content: space-between;
 }
 
-.workOpen{
-	margin-top: -115%!important;
-}
 
-.liWork{
-	margin-bottom: 905px;
-}
-
-.liWorkOpen{
-	margin-bottom: 1200px!important;
-}
 
 .workCard{
 	margin-top: -20%;
@@ -1970,6 +1960,22 @@ h1 {
 
 	#secondNav{
 		margin-left: 17%!important;
+	}
+
+	.work{
+		margin-top: -37%;
+	}
+
+	.workOpen{
+	margin-top: -115%!important;
+	}
+
+	.liWork{
+	margin-bottom: 905px;
+	}
+
+	.liWorkOpen{
+	margin-bottom: 1200px!important;
 	}
 
 	.noWidth{
