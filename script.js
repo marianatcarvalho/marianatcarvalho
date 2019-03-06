@@ -1226,7 +1226,17 @@ $("#liNews").click(function(){
 
 
   
+    if($(".liMenu").hasClass("liWorkOpen")){
+        $(".liMenu").removeClass("liWorkOpen");
+    }
 
+    if($("#liWork").hasClass("liWorkOpen")){
+        $("#liWrok").removeClass("liWorkOpen");
+    }
+
+    if($(".work").hasClass("workOpen")){
+        $(".work").removeClass("workOpen");
+    }
    
 
    
@@ -1242,9 +1252,19 @@ $("#liSobre").click(function(){
     $("#liPesq").removeClass("liOpen");
     $(".sobreCard").css("margin-top", "-185%");
 
+    if($(".liMenu").hasClass("liWorkOpen")){
+        $(".liMenu").removeClass("liWorkOpen");
+    }
+
+    if($("#liWork").hasClass("liWorkOpen")){
+        $("#liWrok").removeClass("liWorkOpen");
+    }
+
+    if($(".work").hasClass("workOpen")){
+        $(".work").removeClass("workOpen");
+    }
    
 
-   
 
 });
 
@@ -1257,13 +1277,19 @@ $("#liWork").click(function(){
 
 
 
+    if($(".liMenu").hasClass("liWorkOpen")){
+        $(".liMenu").removeClass("liWorkOpen");
+    }
+
     if($("#liWork").hasClass("liWorkOpen")){
         $("#liWrok").removeClass("liWorkOpen");
     }
+
     if($(".work").hasClass("workOpen")){
         $(".work").removeClass("workOpen");
     }
    
+
 
    
 
@@ -1276,9 +1302,19 @@ $("#liPesq").click(function(){
     $("#liWork").removeClass("liWork");
     $(".pesqCard").css("margin-top", "-81%");
 
+    if($(".liMenu").hasClass("liWorkOpen")){
+        $(".liMenu").removeClass("liWorkOpen");
+    }
+
+    if($("#liWork").hasClass("liWorkOpen")){
+        $("#liWrok").removeClass("liWorkOpen");
+    }
+
+    if($(".work").hasClass("workOpen")){
+        $(".work").removeClass("workOpen");
+    }
    
 
-   
 
 });
 
