@@ -103,7 +103,6 @@ $('#work').click( function() {
         $(".pesqCard").addClass("transparent");
     }
 
-    
 
     $(".card").removeClass("visible");
     $(".sobreCard").removeClass("visible");
@@ -643,19 +642,21 @@ $("#soloBtn").click(function(){
         $(".colabCard").removeClass("colabDown");
         $(".improvCard").removeClass("improvDown");
         $(".discCard").removeClass("discDown");
-        $(".liWork").addClass("liWorkOpen");
-        $(".work").addClass("workOpen");
+        $(".liWork").removeClass("liWorkOpen");
+        $(".work").removeClass("workOpen");
+
+         console.log("this is if solo")
 
     }
     else{
         $(".colabCard").addClass("colabDown");
         $(".improvCard").addClass("improvDown");
         $(".discCard").addClass("discDown");
-        $(".liWork").removeClass("liWorkOpen");
-        $(".work").removeClass("workOpen");
+        $(".liWork").addClass("liWorkOpen");
+        $(".work").addClass("workOpen");
         $("#soloBtn").addClass("closedCard");
 
-
+        console.log("this is else solo")
     }
 
 });
@@ -687,20 +688,22 @@ $("#colabBtn").click(function(){
         
         $(".improvCard").removeClass("improvDown");
         $(".discCard").removeClass("discDown");
-        $(".liWork").addClass("liWorkOpen");
-        $(".work").addClass("workOpen");
+        $(".liWork").removeClass("liWorkOpen");
+        $(".work").removeClass("workOpen");
+
+        console.log("this is if colab")
 
     }
     else{
       
         $(".improvCard").addClass("improvDown");
         $(".discCard").addClass("discDown");
-        $(".liWork").removeClass("liWorkOpen");
-        $(".work").removeClass("workOpen");
+        $(".liWork").addClass("liWorkOpen");
+        $(".work").addClass("workOpen");
         $("#colabBtn").addClass("closedCard");
 
-
-    }
+        console.log("this is else colab")
+    }   
 
 });
 
@@ -740,21 +743,23 @@ $("#improvBtn").click(function(){
         $(".improvCard").removeClass("improvDown");
         
         $(".discCard").removeClass("discDown");
-        $(".liWork").addClass("liWorkOpen");
-        $(".work").addClass("workOpen");
+        $(".liWork").removeClass("liWorkOpen");
+        $(".work").removeClass("workOpen");
         $("#improvBtn").removeClass("closedCard");
+
+        console.log("this is if im")
 
     }
     else{
       
         $(".colabCard").removeClass("colabDown");
         $(".discCard").addClass("discDown");
-        $(".liWork").removeClass("liWorkOpen");
-        $(".work").removeClass("workOpen");
+        $(".liWork").addClass("liWorkOpen");
+        $(".work").addClass("workOpen");
         $("#improvBtn").addClass("closedCard");
         $("#improvBtn").removeClass("activeBtn");
 
-
+        console.log("this is else im")
     }
 
 });
@@ -779,8 +784,10 @@ function discPush(){
 $("#discBtn").click(function(){
 
     $("#discBtn").addClass("activeBtn");
-    $("#discBtn").removeClass("closedCard");
+   
     $(".discCard").removeClass("discDown");
+
+
 
    closeVideo();
    discPush();
@@ -789,14 +796,28 @@ $("#discBtn").click(function(){
         $(".soloCard").removeClass("soloDown");
         $(".colabCard").removeClass("colabDown");
         $(".improvCard").removeClass("improvDown");
-        $(".liWork").addClass("liWorkOpen");
+         
+       
+        $("#discCard").removeClass("closedCard");
+
+         $(".liWork").addClass("liWorkOpen");
         $(".work").addClass("workOpen");
-        $("#improvBtn").removeClass("closedCard");
-        $(".liWork").removeClass("liWorkOpen");
+        
+
+       console.log("this is if")
     }
 
     else{
-        $(".liWork").addClass("liWorkOpen");
+        console.log("this is else")
+        $(".discCard").removeClass("discDown");
+       
+      
+        $("#discBtn").addClass("closedCard");
+        $("#discBtn").removeClass("activeBtn");
+
+         $(".liWork").removeClass("liWorkOpen");
+        $(".work").removeClass("workOpen");
+
     }
 });
 
@@ -1235,6 +1256,13 @@ $("#liWork").click(function(){
     $(".workCard").css("margin-top", "-185%");
 
 
+
+    if($("#liWork").hasClass("liWorkOpen")){
+        $("#liWrok").removeClass("liWorkOpen");
+    }
+    if($(".work").hasClass("workOpen")){
+        $(".work").removeClass("workOpen");
+    }
    
 
    
@@ -1246,7 +1274,7 @@ $("#liPesq").click(function(){
     $("#liNews").removeClass("liOpen");
     $("#liSobre").removeClass("liOpen");
     $("#liWork").removeClass("liWork");
-    $(".pesqCard").css("margin-top", "-145%");
+    $(".pesqCard").css("margin-top", "-81%");
 
    
 
