@@ -1966,6 +1966,10 @@ h1 {
 		margin-top: -37%;
 	}
 
+	.cardOpen{
+		margin-top: -324%!important;
+	}
+
 	.workOpen{
 	margin-top: -115%!important;
 	}
