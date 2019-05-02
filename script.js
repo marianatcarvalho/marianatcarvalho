@@ -1,4 +1,4 @@
-$('#news').click( function() {
+    $('#news').click( function() {
 
 
     // $("#news").toggleClass("selected");
@@ -705,6 +705,8 @@ $("#colabBtn").click(function(){
         console.log("this is else colab")
     }   
 
+
+
 });
 
 function improvPush(){
@@ -840,6 +842,16 @@ function videoState(){
 
 
 
+}
+
+ $(".music").click(function(){
+    openPlayer()
+ });
+ 
+function openPlayer(){
+   
+        $(".player").removeClass("displayNone");
+    
 }
 
 function soloState(){
@@ -1065,7 +1077,7 @@ $(".listenImprovOneBtn").click(function(){
 
 // var soloPlayers = [player, player, player];
 
-var player = false;
+
 
 
 
@@ -1088,47 +1100,37 @@ var player = false;
 
 
 
-var workTabs = {
-    "tabs": {
-             "soloTab": {
-                         "soloPlayers":[player, player, player]
-                        // cada tab tem um array de players e cada player eh um objeto com numero e isPlaying
-             // colab,
-             // improv,
-             // disco
-                         }
-            }
-}
+
    //um array de objetos com uma categoria .playing = true or false
 
 
 
-function verifier(element){
-workTabs.tabs.soloTab.soloPlayers.forEach(function(element){
-    // console.log(element);
+// function verifier(element){
+// workTabs.tabs.soloTab.soloPlayers.forEach(function(element){
+ 
 
     
-    return element
-});
-    return element
-}
+//     return element
+// });
+//     return element
+// }
 
 
  // if(!(workTabs.tabs.soloTab.soloPlayers.length>=4))
 
 
-function isPlaying(){
-    if(workTabs.tabs.soloTab.soloPlayers.some(verifier)==true){
+// function isPlaying(){
+//     if(workTabs.tabs.soloTab.soloPlayers.some(verifier)==true){
 
         
-   return "playing";  // comand for adding pushCards and closing videos
-}
-else{
+//    return "playing";  // comand for adding pushCards and closing videos
+// }
+// else{
 
-    soloPush()
-   return "not playing"
-}
-}
+//     soloPush()
+//    return "not playing"
+// }
+// }
 
 // workTabs.tabs.soloTab.soloPlayers.some(verifier)
 
@@ -1197,7 +1199,17 @@ else{
 // }
 
 
+//=====================================player=====================================================
 
+$(".slider").click(function(){
+    if($(".soundOff").hasClass("displayNone")){
+        $(".soundOff").removeClass("displayNone")
+        $(".soundUp").addClass("displayNone")
+    }else{
+        $(".soundOff").addClass("displayNone")
+        $(".soundUp").removeClass("displayNone")
+    }
+});
 
 
 
@@ -1205,10 +1217,133 @@ else{
 
 // ====================================================================youtube comands=================================================================
 
+var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 
-// =========================================================height and width ==============================================
+     var videos = new Array();
+    // var videoSoloOne,videoSoloTwo,videoSoloThree;
+    function onYouTubeIframeAPIReady() {
+      videos[0] = new YT.Player('videoSoloOne', {
+        events: {
+          'onStateChange': onPlayerStateChange,
+          'enablejsapi':1
+        }
+      });    
+      videos[1] = new YT.Player('videoSoloTwo', {
+        events: {
+            'onStateChange': onPlayerStateChange,
+            'enablejsapi':1
+        }
+      });
+      videos[2] = new YT.Player('videoSoloThree', {
+        events: {
+            'onStateChange': onPlayerStateChange,
+            'enablejsapi':1
+        }
+      });
+      videos[3] = new YT.Player('videoColabOne', {
+        events: {
+            'onStateChange': onPlayerStateChange,
+            'enablejsapi':1
+        }
+      });
+      videos[4] = new YT.Player('videoImprovOne', {
+        events: {
+            'onStateChange': onPlayerStateChange,
+            'enablejsapi':1
+        }
+      });
+
+    }
+
+       
+
+
+
+        
+
+
+   
+
+
+var currentVideo;
+var previousVideo;
+    
+    function onPlayerStateChange(event) {
+
+        
+
+      if (event.data == YT.PlayerState.PLAYING) {
+         currentVideo = event.target.a.id;
+       console.log("video: " + event.target.a.id);
+        console.log("currentVideo: " + currentVideo);
+        console.log("previousVideo: " + previousVideo);
+
+        
+        if(typeof previousVideo === "undefined"){
+
+              previousVideo = currentVideo;
+            
+             console.log(event.target)
+           
+        }
+
+       
+
+        else if(previousVideo != event.target.a.id){
+            
+            //stop previous video from playing
+            
+            //assing new value for previousVideo?
+             previousVideo = currentVideo;
+          
+
+            console.log("elseif")
+
+        }
+        
+       
+      
+       
+      }
+
+      else if(event.data == YT.PlayerState.ENDED){
+        console.log("stoped")
+      }
+
+       
+
+
+      
+    }
+
+    
+
+    $('.stop').click( function() {
+        //loop players array to stop them all
+        $(videos).each(function(i){
+           this.stopVideo();
+          });
+      });
+
+         $('.pause').click( function() {
+        //loop players array to pause them all
+        $(videos).each(function(i){
+           this.pauseVideo();
+          });
+      });
+
+
+
+    
+
+   
+
+// =========================================================height and width  ==============================================
 var height= window.screen.availHeight;
 $(document).css("max-height", "100vh");
 
@@ -1216,110 +1351,113 @@ $(document).css("max-height", "100vh");
 console.log(height)
 var width = window.screen.availWidth;
 
-if(width<=900){
-$("#liNews").click(function(){
-    $("#liNews").toggleClass("liOpen");
-    $("#liSobre").removeClass("liOpen");
-    $("#liWork").removeClass("liWork");
-    $("#liPesq").removeClass("liOpen");
-    $(".card").css("margin-top", "-185%");
+
+
+// ============================antigo display movendo itens liMenu items para baixo==================================
+// if(width<=900){
+// $("#liNews").click(function(){
+//     $("#liNews").toggleClass("liOpen");
+//     $("#liSobre").removeClass("liOpen");
+//     $("#liWork").removeClass("liWork");
+//     $("#liPesq").removeClass("liOpen");
+//     $(".card").css("margin-top", "-185%");
 
 
   
-    if($(".liMenu").hasClass("liWorkOpen")){
-        $(".liMenu").removeClass("liWorkOpen");
-    }
+//     if($(".liMenu").hasClass("liWorkOpen")){
+//         $(".liMenu").removeClass("liWorkOpen");
+//     }
 
-    if($("#liWork").hasClass("liWorkOpen")){
-        $("#liWrok").removeClass("liWorkOpen");
-    }
+//     if($("#liWork").hasClass("liWorkOpen")){
+//         $("#liWrok").removeClass("liWorkOpen");
+//     }
 
-    if($(".work").hasClass("workOpen")){
-        $(".work").removeClass("workOpen");
-    }
+//     if($(".work").hasClass("workOpen")){
+//         $(".work").removeClass("workOpen");
+//     }
    
 
    
 
-});
+// });
 
 
 
-$("#liSobre").click(function(){
-    $("#liSobre").toggleClass("liOpen");
-    $("#liNews").removeClass("liOpen");
-    $("#liWork").removeClass("liWork");
-    $("#liPesq").removeClass("liOpen");
-    $(".sobreCard").css("margin-top", "-185%");
+// $("#liSobre").click(function(){
+//     $("#liSobre").toggleClass("liOpen");
+//     $("#liNews").removeClass("liOpen");
+//     $("#liWork").removeClass("liWork");
+//     $("#liPesq").removeClass("liOpen");
+//     $(".sobreCard").css("margin-top", "-185%");
 
-    if($(".liMenu").hasClass("liWorkOpen")){
-        $(".liMenu").removeClass("liWorkOpen");
-    }
+//     if($(".liMenu").hasClass("liWorkOpen")){
+//         $(".liMenu").removeClass("liWorkOpen");
+//     }
 
-    if($("#liWork").hasClass("liWorkOpen")){
-        $("#liWrok").removeClass("liWorkOpen");
-    }
+//     if($("#liWork").hasClass("liWorkOpen")){
+//         $("#liWrok").removeClass("liWorkOpen");
+//     }
 
-    if($(".work").hasClass("workOpen")){
-        $(".work").removeClass("workOpen");
-    }
+//     if($(".work").hasClass("workOpen")){
+//         $(".work").removeClass("workOpen");
+//     }
    
 
 
-});
+// });
 
-$("#liWork").click(function(){
-    $("#liWork").toggleClass("liWork");
-    $("#liNews").removeClass("liOpen");
-    $("#liSobre").removeClass("liOpen");
-    $("#liPesq").removeClass("liOpen");
-    $(".workCard").css("margin-top", "-185%");
+// $("#liWork").click(function(){
+//     $("#liWork").toggleClass("liWork");
+//     $("#liNews").removeClass("liOpen");
+//     $("#liSobre").removeClass("liOpen");
+//     $("#liPesq").removeClass("liOpen");
+//     $(".workCard").css("margin-top", "-185%");
 
 
 
-    if($(".liMenu").hasClass("liWorkOpen")){
-        $(".liMenu").removeClass("liWorkOpen");
-    }
+//     if($(".liMenu").hasClass("liWorkOpen")){
+//         $(".liMenu").removeClass("liWorkOpen");
+//     }
 
-    if($("#liWork").hasClass("liWorkOpen")){
-        $("#liWrok").removeClass("liWorkOpen");
-    }
+//     if($("#liWork").hasClass("liWorkOpen")){
+//         $("#liWrok").removeClass("liWorkOpen");
+//     }
 
-    if($(".work").hasClass("workOpen")){
-        $(".work").removeClass("workOpen");
-    }
+//     if($(".work").hasClass("workOpen")){
+//         $(".work").removeClass("workOpen");
+//     }
    
 
 
    
 
-});
+// });
 
-$("#liPesq").click(function(){
-    $("#liPesq").toggleClass("liOpen");
-    $("#liNews").removeClass("liOpen");
-    $("#liSobre").removeClass("liOpen");
-    $("#liWork").removeClass("liWork");
-    $(".pesqCard").css("margin-top", "-81%");
+// $("#liPesq").click(function(){
+//     $("#liPesq").toggleClass("liOpen");
+//     $("#liNews").removeClass("liOpen");
+//     $("#liSobre").removeClass("liOpen");
+//     $("#liWork").removeClass("liWork");
+//     $(".pesqCard").css("margin-top", "-81%");
 
-    if($(".liMenu").hasClass("liWorkOpen")){
-        $(".liMenu").removeClass("liWorkOpen");
-    }
+//     if($(".liMenu").hasClass("liWorkOpen")){
+//         $(".liMenu").removeClass("liWorkOpen");
+//     }
 
-    if($("#liWork").hasClass("liWorkOpen")){
-        $("#liWrok").removeClass("liWorkOpen");
-    }
+//     if($("#liWork").hasClass("liWorkOpen")){
+//         $("#liWrok").removeClass("liWorkOpen");
+//     }
 
-    if($(".work").hasClass("workOpen")){
-        $(".work").removeClass("workOpen");
-    }
+//     if($(".work").hasClass("workOpen")){
+//         $(".work").removeClass("workOpen");
+//     }
    
 
 
-});
+// });
 
 
 
-}
+// }
 
 
