@@ -921,7 +921,8 @@ article img {
   height: 50px;
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 144%;
+  margin-left: -43%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -933,8 +934,9 @@ article img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
+ 
   opacity: 0.7;
+  font-size: 9em;
 }
 .slider-prev-next-control label:hover {
   opacity: 1;
