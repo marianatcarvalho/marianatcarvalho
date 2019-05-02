@@ -423,6 +423,11 @@ section {
 
 }
 
+.noticia a{
+	font-size: 1em;
+	color: red;
+}
+
 .noticias{
 	
 	justify-content: space-around;
@@ -805,6 +810,7 @@ section {
 	opacity: 0;
 	z-index: -1000;
 	margin-left: -1000px!important;
+	transition: 2s linear;
 	
 }
 
