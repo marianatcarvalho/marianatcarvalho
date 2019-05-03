@@ -579,6 +579,20 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
+    $(".leiaMais").click(function(){
+    $(".leiaMaisCard").removeClass("transparent");
+if(width<900){
+     $('html,body').animate({
+        scrollTop: $(".leiaMais").offset().top},
+        'slow');
+}
+if(width>900){
+    $(".largerFont").addClass("bioOpen");
+}
+});
+
+
+
 
 
 $("#work").click(function(){
@@ -621,10 +635,11 @@ function closeVideo(){
 
 
 
-$("#soloBtn").click(function(){
+$(".soloBtn").click(function(){
   
-    $("#soloBtn").addClass("activeBtn");
-    $("#soloBtn").removeClass("closedCard");
+    $(".soloBtn").addClass("activeBtn");
+    $(".soloBtn").removeClass("closedCard");
+    
 
     closeVideo();
 
@@ -638,7 +653,7 @@ $("#soloBtn").click(function(){
         
 
     // }
-    if(width<=900 && $("#soloBtn").hasClass("closedCard")){
+    if(width<=900 && $(".soloBtn").hasClass("closedCard")){
         $(".colabCard").removeClass("colabDown");
         $(".improvCard").removeClass("improvDown");
         $(".discCard").removeClass("discDown");
@@ -654,7 +669,7 @@ $("#soloBtn").click(function(){
         $(".discCard").addClass("discDown");
         $(".liWork").addClass("liWorkOpen");
         $(".work").addClass("workOpen");
-        $("#soloBtn").addClass("closedCard");
+        $(".soloBtn").addClass("closedCard");
 
         console.log("this is else solo")
     }
@@ -675,10 +690,10 @@ function colabPush(){
     
 }
 
-$("#colabBtn").click(function(){
+$(".colabBtn").click(function(){
 
-    $("#colabBtn").addClass("activeBtn");
-    $("#colabBtn").removeClass("closedCard");
+    $(".colabBtn").addClass("activeBtn");
+    $(".colabBtn").removeClass("closedCard");
     $(".colabCard").removeClass("colabDown");
 
    closeVideo();
@@ -700,7 +715,7 @@ $("#colabBtn").click(function(){
         $(".discCard").addClass("discDown");
         $(".liWork").addClass("liWorkOpen");
         $(".work").addClass("workOpen");
-        $("#colabBtn").addClass("closedCard");
+        $(".colabBtn").addClass("closedCard");
 
         console.log("this is else colab")
     }   
@@ -729,10 +744,10 @@ function improvPush(){
     } 
 }
 
-$("#improvBtn").click(function(){
+$(".improvBtn").click(function(){
 
-    $("#improvBtn").addClass("activeBtn");
-    $("#improvBtn").removeClass("closedCard");
+    $(".improvBtn").addClass("activeBtn");
+    $(".improvBtn").removeClass("closedCard");
     $(".improvCard").removeClass("improvDown");
 
 
@@ -740,14 +755,14 @@ $("#improvBtn").click(function(){
      improvPush();
 
 
-     if(width<=900 && $("#improvBtn").hasClass("closedCard")){
+     if(width<=900 && $(".improvBtn").hasClass("closedCard")){
         
         $(".improvCard").removeClass("improvDown");
         
         $(".discCard").removeClass("discDown");
         $(".liWork").removeClass("liWorkOpen");
         $(".work").removeClass("workOpen");
-        $("#improvBtn").removeClass("closedCard");
+        $(".improvBtn").removeClass("closedCard");
 
         console.log("this is if im")
 
@@ -758,8 +773,8 @@ $("#improvBtn").click(function(){
         $(".discCard").addClass("discDown");
         $(".liWork").addClass("liWorkOpen");
         $(".work").addClass("workOpen");
-        $("#improvBtn").addClass("closedCard");
-        $("#improvBtn").removeClass("activeBtn");
+        $(".improvBtn").addClass("closedCard");
+        $(".improvBtn").removeClass("activeBtn");
 
         console.log("this is else im")
     }
@@ -783,9 +798,9 @@ function discPush(){
 
 }
 
-$("#discBtn").click(function(){
+$(".discBtn").click(function(){
 
-    $("#discBtn").addClass("activeBtn");
+    $(".discBtn").addClass("activeBtn");
    
     $(".discCard").removeClass("discDown");
 
@@ -800,7 +815,7 @@ $("#discBtn").click(function(){
         $(".improvCard").removeClass("improvDown");
          
        
-        $("#discCard").removeClass("closedCard");
+        $(".discCard").removeClass("closedCard");
 
          $(".liWork").addClass("liWorkOpen");
         $(".work").addClass("workOpen");
@@ -814,8 +829,8 @@ $("#discBtn").click(function(){
         $(".discCard").removeClass("discDown");
        
       
-        $("#discBtn").addClass("closedCard");
-        $("#discBtn").removeClass("activeBtn");
+        $(".discBtn").addClass("closedCard");
+        $(".discBtn").removeClass("activeBtn");
 
          $(".liWork").removeClass("liWorkOpen");
         $(".work").removeClass("workOpen");
