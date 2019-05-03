@@ -459,6 +459,7 @@ section {
 
 .leiaMais:hover{
 	cursor: pointer;
+
 }
 
 
@@ -2346,6 +2347,13 @@ h1 {
 
 	}
 
+	.leiaMaisCard{
+		width: 100%;
+		margin-left: 0%;
+		transition: 1s linear;
+		margin-top: 10%;
+	}
+
 	.construcao{
 		margin-top: 21%;
 		margin-left: 30.5%;
@@ -2419,11 +2427,15 @@ h1 {
 
 	.work{
 		margin-top: -37%;
-		margin-left: -6%;
+		margin-left: 2%;
 	}
 
 	.cardOpen{
 		margin-top: -324%!important;
+	}
+
+	#soloBtn{
+		margin-top: 0%;
 	}
 
 	/*.workOpen{
