@@ -2329,6 +2329,23 @@ h1 {
 		
 	}
 
+	.sobreCard{
+		margin-top: -123%;
+	}
+
+	.slider-prev-next-control {
+		width: 100%;
+		margin-left: 1%;
+	}
+
+
+	.slider-prev-next-control label {
+
+		font-size: 4em;
+		
+
+	}
+
 	.construcao{
 		margin-top: 21%;
 		margin-left: 30.5%;
