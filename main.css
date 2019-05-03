@@ -332,7 +332,7 @@ a{
 }
 
 .menu{
-	margin-top: -185px;
+	margin-top: -9%;
 	
 	
 }
@@ -457,6 +457,9 @@ section {
 
 }
 
+.leiaMais:hover{
+	cursor: pointer;
+}
 
 
 .card h2{
@@ -484,11 +487,29 @@ section {
 	padding: 3px;
 }
 
+
+
 .bioText{
 	margin-left: 35%;
     margin-top: -290px;
 /*    margin-right: 5%;
 */}
+
+.leiaMaisCard{
+	width: 77%;
+	
+	margin-left: 43%;
+	transition: 3s linear;
+}
+
+.bioOpen{
+	position: absolute;
+	margin-top: 14%!important;
+	width: 17%!important;
+	
+	transition: 3s linear;
+}
+
 
 
 .padding80{
@@ -2186,6 +2207,7 @@ figure.show{
 
 .largerFont{
 	font-size: 1.3em!important;
+	transition: 3s linear;
 }
 
 
@@ -2535,7 +2557,7 @@ h1 {
 
 
 	.menu{
-		margin-left: 0;
+		margin-top: 5%;
 		font-size: 1.5em;
 	}
 
