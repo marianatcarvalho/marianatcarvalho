@@ -333,6 +333,7 @@ a{
 
 .menu{
 	margin-top: -9%;
+	z-index: 100;
 	
 	
 }
@@ -458,10 +459,13 @@ section {
 }
 
 .leiaMais:hover{
-	cursor: pointer;
+	cursor: pointer!important;
 
 }
 
+.leiaMenos:hover{
+	cursor: pointer;
+}
 
 .card h2{
 	padding:20px;
@@ -472,17 +476,20 @@ section {
 }
 
 .sobreCard{
-	margin-top: 5%;
+	margin-top: 1%;
 	height: 480px;
 	width:70%;
 	margin-left: 15%;
+	
  	background-color: rgba(255, 255, 255, 0);
-/* 	border: 5px solid black;  
-*/ 	position: absolute;
+ 	position: absolute;
  	opacity: 1;
- 	transition: opacity 1s linear;
+ 	transition: all 2s linear;
 }
 
+.sobreCardOpen{
+	margin-left: 39%!important;
+}
 
 .music i{
 	padding: 3px;
@@ -497,19 +504,30 @@ section {
 */}
 
 .leiaMaisCard{
-	width: 77%;
+	width: 35%;
 	
-	margin-left: 43%;
-	transition: 3s linear;
+	margin-left: -7%;
+	transition: 2s linear;
+	overflow-y: auto;
+	height: 52%;
+	border:6px solid;
+	border-radius: 40px;
+	padding: 3%;
+	margin-top: 22%;
+
 }
+
+
 
 .bioOpen{
 	position: absolute;
-	margin-top: 14%!important;
-	width: 17%!important;
+	margin-top: -5%!important;
+	width: 10%!important;
 	
 	transition: 3s linear;
 }
+
+
 
 
 
@@ -538,11 +556,17 @@ section {
 }
 
 .pictureFrame{
-	margin:10px;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
+	margin:1%;
+
+	/*border-radius: 50%;*/
 	background-position: center;
+
+    width: auto;
+    max-width: 315px;
+    height: auto;
+    max-height: 315px;
+
+
 }
 
 .picture{
@@ -581,10 +605,47 @@ section {
 
 }
 
+.fotoCard{
+	margin-top: -18%;
+	height: 66.6%;
+	width:49%;
+	margin-left: 64%;
+ 	background-color: rgba(255, 255, 255, 0);
+/* 	border: 5px solid black;  
+*/ 	position: absolute;
+ 	opacity: 1;
+ 	transition: all 2s linear;
+ 	overflow-y: auto;
+
+
+
+}
+
+.workFoto{
+	width: 100%;
+	height:100%;
+	/*border-radius: 20px;*/
+}
+
+.closedFoto{
+	width: 15%!important;
+	transition: all 2s linear;
+	height: 57%!important;
+	margin-left: 63%!important;
+}
+
+.fotoPush{
+	margin-left: 97%!important;
+}
+
 /*.scroll{
 	overflow: auto;
 }*/
 
+.galeriaTeste{
+	width: 94%;
+	border-radius: 20px;
+}
 
 .work{
 	margin-left: -15%;
@@ -592,8 +653,28 @@ section {
 	justify-content: space-between;
 }
 
+.workNav{
+	margin-bottom: 6%;
+}
+
 .workTitle{
 	background-color: white;
+	padding: 1%;
+	position: fixed;
+
+
+}
+
+.workText{
+	padding-top:55px;
+}
+
+.workGaleria{
+	padding-top: 12px;
+}
+
+.workTitle:hover{
+	cursor: pointer;
 }
 
 
@@ -619,7 +700,7 @@ section {
 .soloCard{
 	margin-top: -19%;
 	height: 70%;
-	width:57%;
+	width:41%;
 	margin-left: 17%;
  	background-color: transparent;
  	border-right: 5px solid black;  
@@ -652,7 +733,7 @@ section {
 .colabCard{
 	margin-top: -19%;
 	height: 70%;
-	width:60%;
+	width:45%;
 	margin-left: 26%;
  	background-color: transparent;
  	border-right: 5px solid black;  
@@ -668,7 +749,7 @@ section {
 }
 
 .pushColab{
-	 margin-left: 76%;
+	 margin-left: 58%;
 
 
 }
@@ -693,7 +774,7 @@ section {
 .improvCard{
 	margin-top: -18.8%;
 	height: 70%;
-	width:60%;
+	width:45%;
 	margin-left: 38.6%;
  	background-color: transparent;
  	border-right:5px solid black;  
@@ -713,7 +794,7 @@ section {
 
 .pushImprov{
 	transition: all 2s linear;
-	margin-left: 90%!important;
+	margin-left: 71%!important;
 }
 
 /*.pushImprovColab{
@@ -743,9 +824,9 @@ section {
 .discCard{
 	margin-top: -19.5%;
 	height: 70%;
-	width:60%;
+	width:45%;
 	margin-left: 51.3%;
- 	background-color:white;
+ 	background-color:transparent;
  	border-right: 5px solid black;  
  	position: absolute;
  	opacity: 1;
@@ -758,7 +839,7 @@ section {
 }
 
 .pushDisc{
-	margin-left: 103%;
+	margin-left: 84%;
 }
 
 .discWidth{
@@ -810,7 +891,7 @@ section {
 	height: 480px;
 	width:70%;
 	margin-left: 19%;
- 	background-color: rgba(255, 255, 255, .7);
+ 	background-color: rgba(255, 255, 255, 0);
  	/*border: 5px solid black;  */
  	position: absolute;
  	opacity: 1;
@@ -924,7 +1005,7 @@ section {
   max-width: 20em;
   margin: 1em auto;
   position: relative;
-  margin-left: -4%;
+  margin-left: -1%;
 }
 
 input {
@@ -951,7 +1032,7 @@ article img {
   position: absolute;
   top: 50%;
   width: 144%;
-  margin-left: -43%;
+  margin-left: -23%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -965,13 +1046,14 @@ article img {
   border-radius: 50%;
  
   opacity: 0.7;
-  font-size: 9em;
+  font-size: 1em;
 }
 .slider-prev-next-control label:hover {
   opacity: 1;
 }
 
 .slider-dot-control {
+  display: none;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -983,15 +1065,17 @@ article img {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #bbb;
+  background: transparent;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 .slider-dot-control label:hover {
-  background: #ccc;
+  background: transparent;
   border-color: #777;
 }
+
+
 
 /* Info Box */
 .info {
@@ -1034,8 +1118,8 @@ article img {
   width: 100%;
   overflow: hidden;
   border-radius: 5px;
-  background: #fff;
-  background: #fcfff4;
+  background: transparent;
+  background: transparent;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -1044,6 +1128,7 @@ article img {
   -webkit-transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
+  border-radius:50%;
 }
 .slider-wrapper .inner {
   -webkit-transform: translateZ(0);
@@ -2211,81 +2296,146 @@ figure.show{
 	transition: 3s linear;
 }
 
-
-/*==========================================================efect part===============================*/
-
-
-
-/*html {
-	font: 100 1.5em sans-serif;
-}
-body {
-	padding: 2em 5em 0em 5em;
+.wordsCard{
+	margin-left: -20%;
+	transition: 1s linear;
 }
 
-h1 {
-	font-weight: 100;
-}*/
-
-/*.display {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-gap: 0.1em;
-}*/
-
-/*.HOVER {
-	--width: 100%;
-	--time: 0.7s;
-	position: relative;
-	display: inline-block;
-	height: 1em;
-	padding: 1em;
-
-	color: white;
-	background: #222;
-	overflow: hidden;
-}
-
-.HOVER text {
-	position: relative;
-	z-index: 5;
-	transition: color var(--time);
-}
-
-.HOVER:hover text {
-	color: #222;
-}
-.HOVER span {
-	border-radius: 100%;
+.wordsFirst{
 	position: absolute;
-	display: block;
-	content: "";
-	z-index: 0;
-	width: 0;
-	height: 0;
+	margin-left: -20%;
 
-	background: #fff;
-	transform: translate(-50%, -50%);
-	transition: width var(--time), padding-top var(--time);
 }
 
-.HOVER:hover span {
-	width: calc(var(--width)*2.25);
-	padding-top: calc(var(--width)* 2.25);
+.wordsSecon{
+	position: absolute;
 }
-
-.HOVER.FLASH:hover text {
-	color: white;
-}
-.HOVER.FLASH span {
-	background: #ff3b3b;
-}
-
-.animated {
-	--angle: 5deg;
-	animation: shake 0.3s;
-}
+/*==========================================================arrow bouncing animation=========================================
 */
+
+
+@-webkit-keyframes bounceLeft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  60% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+@-moz-keyframes bounceLeft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+}
+@keyframes bounceLeft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  60% {
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+/* /left bounce */
+
+
+/* right bounce */
+@-webkit-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+@-moz-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+/* /right bounce */
+
+
+/* assign bounce */
+.workTitleRight:hover {
+  -webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;
+  float:right;
+}
+
+.workTitle:hover {
+  -webkit-animation: bounceLeft 2s infinite;
+  animation: bounceLeft 2s infinite;
+  
+}
+
 
 /*===========================================================media selector===========================================================*/
 
@@ -2347,11 +2497,21 @@ h1 {
 
 	}
 
+	
+
 	.leiaMaisCard{
+		position: absolute;
 		width: 100%;
 		margin-left: 0%;
 		transition: 1s linear;
-		margin-top: 10%;
+		margin-top: 9%;
+		height: 50%;
+		
+	}
+
+	.leiaMaisText{
+		height: 40%;
+		overflow: auto!important;
 	}
 
 	.construcao{
