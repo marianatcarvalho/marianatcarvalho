@@ -20,7 +20,7 @@
     $(".card").toggleClass("visible");
   
 
-    if($(".sobreCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+    if($(".sobreCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")||$(".fotoCard").hasClass("visible")){
     	$(".sobreCard").addClass("transparent");
    		$(".contatoCard").addClass("transparent");
         $(".soloCard").addClass("transparent");
@@ -28,6 +28,8 @@
         $(".improvCard").addClass("transparent");
         $(".discCard").addClass("transparent");
         $(".pesqCard").addClass("transparent");
+        $(".fotoCard").addClass("transparent");
+
 
     }
     $(".sobreCard").removeClass("visible");
@@ -37,6 +39,7 @@
     $(".improvCard").removeClass("visible");
     $(".discCard").removeClass("visible");
     $(".pesqCard").removeClass("visible");
+    $(".fotoCard").removeClass("visible");
 
 
 
@@ -59,7 +62,7 @@ $('#sobre').click( function() {
    
     $(".sobreCard").toggleClass("transparent");
     $(".sobreCard").toggleClass("visible");
-    if($(".card").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
+    if($(".card").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")||$("fotoCard").hasClass("visible")){
     	$(".card").addClass("transparent");
         $(".contatoCard").addClass("transparent");
     	$(".soloCard").addClass("transparent");
@@ -67,6 +70,9 @@ $('#sobre').click( function() {
         $(".improvCard").addClass("transparent");
         $(".discCard").addClass("transparent");
         $(".pesqCard").addClass("transparent");
+
+         $(".fotoCard").addClass("transparent");
+         
 
    
     }
@@ -79,7 +85,15 @@ $('#sobre').click( function() {
     $(".discCard").removeClass("visible");
     $(".pesqCard").removeClass("visible");
 
+    $(".fotoCard").removeClass("visible");
+
 } );
+
+
+
+
+
+
 
 $('#work').click( function() {
     $(".soloCard").toggleClass("transparent");
@@ -90,6 +104,10 @@ $('#work').click( function() {
     $(".improvCard").toggleClass("visible");
     $(".discCard").toggleClass("transparent");
     $(".discCard").toggleClass("visible");
+
+    $(".fotoCard").toggleClass("transparent");
+    $(".fotoCard").toggleClass("visible");
+
    
    
 
@@ -101,6 +119,7 @@ $('#work').click( function() {
         $(".improvCard").addClass("transparent");
         
         $(".pesqCard").addClass("transparent");
+
     }
 
 
@@ -197,7 +216,7 @@ $('#pesq').click( function() {
 
     $(".pesqCard").toggleClass("transparent");
     $(".pesqCard").toggleClass("visible");
-    if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")){
+    if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".fotoCard").hasClass("visible")){
         $(".card").addClass("transparent");
         $(".sobreCard").addClass("transparent");
         $(".soloCard").addClass("transparent");
@@ -205,6 +224,9 @@ $('#pesq').click( function() {
         $(".colabCard").addClass("transparent");
         $(".improvCard").addClass("transparent");
         $(".discCard").addClass("transparent");
+        $(".fotoCard").addClass("transparent");
+
+         
 
     }
 
@@ -215,6 +237,7 @@ $('#pesq').click( function() {
     $(".colabCard").removeClass("visible");
     $(".improvCard").removeClass("visible");
     $(".discCard").removeClass("visible");
+    $(".fotoCard").removeClass("visible");
 } );
 
 
@@ -580,7 +603,14 @@ for (var i = 0; i < btns.length; i++) {
 
 
     $(".leiaMais").click(function(){
+
     $(".leiaMaisCard").removeClass("transparent");
+    $(".leiaMais").addClass("displayNone");
+    $(".leiaMenos").removeClass("displayNone");
+    $(".sobreCard").addClass("sobreCardOpen");
+   
+   
+
 if(width<900){
      $('html,body').animate({
         scrollTop: $(".leiaMais").offset().top},
@@ -592,6 +622,37 @@ if(width>900){
 });
 
 
+    $(".leiaMenos").click(function(){
+
+    $(".leiaMaisCard").addClass("transparent");
+    $(".leiaMenos").addClass("displayNone");
+    $(".leiaMais").removeClass("displayNone");
+    $(".sobreCard").removeClass("sobreCardOpen");
+   
+   
+
+   
+
+if(width<900){
+     $('html,body').animate({
+        scrollTop: $(".leiaMais").offset().top},
+        'slow');
+}
+if(width>900){
+    $(".largerFont").removeClass("bioOpen");
+}
+});
+
+
+// $(".workTitleLeft").click(function(){
+    
+       
+      
+    
+   
+  
+
+// });
 
 
 
@@ -615,7 +676,9 @@ function soloPush(){
     $(".improvCard").addClass("improvWidth");
     $(".improvCard").addClass("pushImprov");
      $(".discCard").addClass("discWidth");
-    $(".discCard").addClass("pushDisc");
+     $(".discCard").addClass("pushDisc");
+    $(".fotoCard").addClass("fotoPush");
+    $(".fotoCard").addClass("closedFoto");
    
 
     if($(".improvCard").hasClass("pushImprov")||$(".colabCard").hasClass("pushColab")){
@@ -636,7 +699,8 @@ function closeVideo(){
 
 
 $(".soloBtn").click(function(){
-  
+    
+
     $(".soloBtn").addClass("activeBtn");
     $(".soloBtn").removeClass("closedCard");
     
@@ -683,6 +747,9 @@ function colabPush(){
     $(".soloCard").addClass("noWidth");
     $(".discCard").addClass("discWidth");
     $(".discCard").addClass("pushDisc");
+    $(".fotoCard").addClass("closedFoto");
+    $(".fotoCard").addClass("fotoPush");
+
     if($(".colabCard").hasClass("pushColab")||$(".improvCard").hasClass(".pushImprovColab")){
         $(".improvCard").removeClass(".pushImprovColab");
         $(".colabCard").removeClass("pushColab");
@@ -731,6 +798,8 @@ function improvPush(){
      $(".soloCard").addClass("noWidth");
     $(".discCard").addClass("discWidth");
     $(".discCard").addClass("pushDisc");
+    $(".fotoCard").addClass("closedFoto");
+    $(".fotoCard").addClass("fotoPush");
     // $(".improvCard").removeClass(".pushImprov");
     // $(".colabCard").addClass("pushColab");
     $(".soloCard").addClass("noWidth");
@@ -790,6 +859,8 @@ function discPush(){
     $(".soloCard").addClass("noWidth");
     $(".colabCard").addClass("colabWidth");
     $(".improvCard").addClass("improvWidth");
+    $(".fotoCard").addClass("closedFoto");
+    $(".fotoCard").addClass("fotoPush");
     if($(".improvCard").hasClass("pushColab")||$(".colabCard").hasClass("pushColab")||$(".pushImprov").hasClass("pushImprov")){
         $(".improvCard").removeClass("pushImprov");
         $(".colabCard").removeClass("pushColab");
@@ -836,6 +907,46 @@ $(".discBtn").click(function(){
         $(".work").removeClass("workOpen");
 
     }
+});
+
+function fotoPush(){
+     $(".fotoCard").toggleClass("closedFoto");
+    $(".fotoCard").removeClass("pushDisc");
+    $(".fotoCard").removeClass("pushImprov");
+    $(".fotoCard").removeClass("pushColab");
+    // $(".improvCard").removeClass(".pushImprov");
+    // $(".colabCard").addClass("pushColab");
+    $(".soloCard").addClass("noWidth");
+    $(".colabCard").addClass("colabWidth");
+    $(".improvCard").addClass("improvWidth");
+    $(".discCard").addClass("discWidth");
+
+    if($(".improvCard").hasClass("pushColab")||$(".colabCard").hasClass("pushColab")||$(".pushImprov").hasClass("pushImprov")||$(".pushDisc").hasClass("pushDisc")){
+        $(".improvCard").removeClass("pushImprov");
+        $(".colabCard").removeClass("pushColab");
+        $(".discCard").removeClass("pushDisc");
+        // $(".colabCard").removeClass("pushColab");
+    }
+
+}
+
+
+
+$(".fotoBtn").click(function(){
+   
+    $(".fotoCard").toggleClass("fotoPush");
+
+    // $(".soloCard").addClass("noWidth");
+    // $(".colabCard").addClass("colabWidth");
+    // $(".improvCard").addClass("improvWidth");
+    // $(".discCard").addClass("discWidth");
+
+    
+   
+
+
+    closeVideo();
+    fotoPush();
 });
 
 // var count=0;
