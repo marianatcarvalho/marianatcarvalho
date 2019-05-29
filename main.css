@@ -242,6 +242,9 @@ input:checked + .slider:before {
 .languageSelection{
 	padding-bottom: 6px;
 	padding-right: 4px;
+	color: black;
+	text-decoration: none;
+	font-size: 1.5em;
 }
 
 
@@ -302,13 +305,17 @@ ul li{
 
 a{
 
-	text-decoration: none;
+/*	text-decoration: none;
 	font-size: 1.5em;
-	color:black;
+	color:black;*/
 
 }
 
-	
+.menu li a{
+	text-decoration: none;
+	font-size: 1.5em;
+	color:black;
+}	
 
 
 
@@ -319,6 +326,14 @@ a{
 	margin:10px;
 	padding: 40px;
 }
+
+.title a{
+	font-size: 1.4em;
+	color: black;
+	text-decoration: none;
+
+}
+
 .name{
 	white-space: nowrap;
 }
@@ -423,10 +438,17 @@ section {
 	margin-top: 5%;
 
 }
+.noticia{
+	margin-bottom: 6%;
+}
+
+.noticia p{
+	margin-bottom: 1%;
+}
 
 .noticia a{
 	font-size: 1em;
-	color: red;
+	
 }
 
 .noticias{
@@ -445,7 +467,7 @@ section {
  	transition: opacity 1s linear;
 */
 	margin-top: 9%;
-	/*height: 480px;*/
+	height: 47%;
 	width:70%;
 	
  	background-color: rgba(255, 255, 255, .7);
@@ -469,6 +491,7 @@ section {
 
 .card h2{
 	padding:20px;
+
 }
 
 .card p{
@@ -662,6 +685,15 @@ section {
 	padding: 1%;
 	position: fixed;
 
+
+}
+
+.workTitulo{
+	font-size: 1.2em;
+}
+
+.workSubTitulo{
+	font-size: 1.1em;
 
 }
 
@@ -887,15 +919,28 @@ section {
 }
 
 .pesqCard{
-	margin-top: -13%;
+	margin-top: -20%;
 	height: 480px;
 	width:70%;
-	margin-left: 19%;
+	margin-left: 15%;
  	background-color: rgba(255, 255, 255, 0);
  	/*border: 5px solid black;  */
+ /*	position: absolute;
+ 	opacity: 1;
+ 	transition: opacity 1s linear;*/
+/*
+ 	margin-top: 9%;*/
+	/*height: 480px;*/
+/*	width:70%;*/
+	
+ 	background-color: rgba(255, 255, 255, .7);
+ 	border-left: 7px solid #555;  
  	position: absolute;
  	opacity: 1;
  	transition: opacity 1s linear;
+ 	overflow-y: auto;
+ 	padding-left: 40px;
+
 }
 
 .contatoCard{
@@ -941,6 +986,7 @@ section {
 	margin-top: 58px;
 	transition:1s ease-in;
 	/*margin-left: 180%;*/
+
 }
 
 .socialMedia{
@@ -955,9 +1001,14 @@ section {
 	flex-direction: column;
 	position: relative;
 	transition: 1s linear;
+
 }
 
-
+.socialMedia a{
+	color: black;
+	font-size: 1.5em;
+	text-decoration: none;
+}
 
 
 .socialMedia ul{
@@ -2555,6 +2606,19 @@ figure.show{
 		margin-left: 31%!important;
 		font-size: 2em!important;
 	}
+
+	div.language a{
+		text-decoration: none;
+		color: black;
+		opacity: 0.8;
+		transition: all 0.5s linear;
+	}
+
+	.language a:hover{
+		opacity: 1;
+		transition: all 0.5s linear;
+	}
+
 
 	.title{
 		padding: 0;
