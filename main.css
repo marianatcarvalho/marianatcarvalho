@@ -281,6 +281,10 @@ input:checked + .slider:before {
 iframe{
 	width: 100%;
 	transition: all 2s linear;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 .heightZero{
@@ -750,6 +754,10 @@ section {
 	padding-right: 8%!important; 
 	overflow-x: hidden;
 	
+}
+
+.positionFixed{
+	position: fixed;
 }
 
 #soloBtn{
@@ -2711,7 +2719,7 @@ figure.show{
 	}
 
 	.colabDown{
-		margin-top: 9%!important;
+		margin-top: 12%!important;
 	}
 
 	.colabCard{
@@ -2738,7 +2746,7 @@ figure.show{
 	}
 
 	.improvDown{
-		margin-top: 70%!important;
+		margin-top: 24%!important;
 	}
 
 	.improvCard{
@@ -2769,7 +2777,11 @@ figure.show{
 	}
 
 	.discDown{
-		margin-top: 127%!important;
+		margin-top: 35%!important;
+	}
+
+	.fotoDown{
+		margin-top: 47%!important;
 	}
 
 	.discCard{
@@ -2806,6 +2818,13 @@ figure.show{
 		width: 82%;
 		margin-left: 19%;
 		z-index: 1000;
+	}
+
+	.closedFoto{
+		width: 27%!important;
+		height: 4%!important;
+		margin-left: 48%!important;
+		margin-top: -127%!important;
 	}
 
 	.workTitle{
