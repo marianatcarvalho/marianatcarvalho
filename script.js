@@ -705,6 +705,7 @@ $(".soloBtn").click(function(){
     
 
     $(".soloBtn").addClass("activeBtn");
+    
     $(".soloBtn").removeClass("closedCard");
     
 
@@ -878,6 +879,11 @@ $(".discBtn").click(function(){
    
     $(".discCard").removeClass("discDown");
 
+    if($(".improvCard").hasClass("improvDown")||$(".colabCard").hasClass("colabDown")){
+       $(".improvCard").removeClass("improvDown"); 
+       $(".colabCard").removeClass("colabDown");
+    }
+
 
 
    closeVideo();
@@ -938,6 +944,11 @@ function fotoPush(){
 $(".fotoBtn").click(function(){
    
     $(".fotoCard").toggleClass("fotoPush");
+    if($(".improvCard").hasClass("improvDown")||$(".colabCard").hasClass("colabDown")|| $(".discCard").hasClass("discDown")){
+        $(".improvCard").removeClass("improvDown");
+        $(".colabCard").removeClass("colabDown");
+        $(".discCard").removeClass("discDown");
+    }
 
     // $(".soloCard").addClass("noWidth");
     // $(".colabCard").addClass("colabWidth");
