@@ -707,7 +707,7 @@ $(".soloBtn").click(function(){
     $(".soloBtn").addClass("activeBtn");
     
     $(".soloBtn").removeClass("closedCard");
-    
+    $(".soloCard").animate({scrollTop: 0}, 2000);
 
     closeVideo();
 
@@ -766,6 +766,7 @@ $(".colabBtn").click(function(){
     $(".colabBtn").addClass("activeBtn");
     $(".colabBtn").removeClass("closedCard");
     $(".colabCard").removeClass("colabDown");
+    $(".colabCard").animate({scrollTop: 0}, 2000);
 
    closeVideo();
    colabPush();
@@ -822,6 +823,7 @@ $(".improvBtn").click(function(){
     $(".improvBtn").addClass("activeBtn");
     $(".improvBtn").removeClass("closedCard");
     $(".improvCard").removeClass("improvDown");
+    $(".improvCard").animate({scrollTop: 0}, 2000);
 
 
      closeVideo();
@@ -884,7 +886,7 @@ $(".discBtn").click(function(){
        $(".colabCard").removeClass("colabDown");
     }
 
-
+     $(".discCard").animate({scrollTop: 0}, 2000);
 
    closeVideo();
    discPush();
@@ -936,6 +938,8 @@ function fotoPush(){
         $(".discCard").removeClass("pushDisc");
         // $(".colabCard").removeClass("pushColab");
     }
+
+     $(".fotoCard").animate({scrollTop: 0}, 2000);
 
 }
 
