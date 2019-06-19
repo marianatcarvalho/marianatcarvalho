@@ -131,6 +131,9 @@ $('#work').click( function() {
     $(".discCard").removeClass("visible");
     $(".pesqCard").removeClass("visible");
 
+    $(".fotoCard").removeClass("transparent");
+    $(".fotoCard").removeClass("visible");
+
 
 } );
 
