@@ -2700,7 +2700,7 @@ figure.show{
 		margin-top: -127%;
 		margin-left: 17%;
 		width: 87%;
-		height: 67%;
+		height: 52%;
 		border:0;
 		z-index: 1000;
 		
@@ -2719,14 +2719,14 @@ figure.show{
 	}
 
 	.colabDown{
-		margin-top: 12%!important;
+		margin-top: -16%!important;
 	}
 
 	.colabCard{
 		margin-top: -117%;
 		margin-left: 15%;
 		width: 87%;
-		height: 67%;
+		height: 46%;
 		border:0;
 		z-index: 1000;
 		
@@ -2746,14 +2746,14 @@ figure.show{
 	}
 
 	.improvDown{
-		margin-top: 24%!important;
+		margin-top: -6%!important;
 	}
 
 	.improvCard{
 		margin-top: -106%;
 		margin-left: 16%;
 		width: 87%;
-		height: 67%;
+		height: 52%;
 		border:0;
 		z-index: 1000;
 		
@@ -2777,7 +2777,7 @@ figure.show{
 	}
 
 	.discDown{
-		margin-top: 35%!important;
+		margin-top: 5%!important;
 	}
 
 	.fotoDown{
@@ -2786,9 +2786,9 @@ figure.show{
 
 	.discCard{
 		margin-top: -96%;
-		margin-left: 18%;
+		margin-left: 16%;
 		width: 87%;
-		height: 67%;
+		height: 60%;
 		border:0;
 		z-index: 1000;
 		
@@ -2815,7 +2815,7 @@ figure.show{
 
 	.fotoCard{
 		margin-top: -83%;
-		width: 82%;
+		width: 84%;
 		margin-left: 19%;
 		z-index: 1000;
 	}
@@ -2828,12 +2828,13 @@ figure.show{
 	}
 
 	.workTitle{
-		position: inherit;
+		
 		z-index: 1000;
 	}
 
 	.workTitle:hover{
 		animation: none;
+		color: black;
 	}
 
 }
