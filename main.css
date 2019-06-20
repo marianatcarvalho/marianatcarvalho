@@ -487,11 +487,15 @@ section {
 
 .leiaMais:hover{
 	cursor: pointer!important;
+	color: black;
+	font-size: 1.2em;
 
 }
 
 .leiaMenos:hover{
 	cursor: pointer;
+	color: black;
+	font-size: 1.2em;
 }
 
 .card h2{
@@ -721,7 +725,7 @@ section {
 }
 
 .workCard{
-	margin-top: -20%;
+	margin-top: -19%;
 	margin-left: -6%;
 }
 
@@ -2511,6 +2515,8 @@ figure.show{
 		position: fixed;
 	}
 
+	
+
 	.liOpen{
 		margin-bottom: 695px;
 		transition: 1s linear;
@@ -2542,6 +2548,10 @@ figure.show{
 
 	.sobreCard{
 		margin-top: -123%;
+	}
+
+	.workCard{
+		margin-top: 22%;
 	}
 
 	.slider-prev-next-control {
@@ -2586,7 +2596,7 @@ figure.show{
 	}
 
 	.largerFont{
-		/*margin-top: 131%;*/
+		
 	}
 
 	.inicioBlock{
@@ -2629,6 +2639,7 @@ figure.show{
 	}
 
 
+
 	.title{
 		padding: 0;
 
@@ -2639,13 +2650,14 @@ figure.show{
 	.menu{
 		display: flex;
 		margin-left: -124%!important;
-		margin-top:-9%;
+		margin-top:-24%;
 		flex-direction: column;
 		text-align: center;
 	}
 
 	.liMenu{
 		transform: rotate(90deg);
+		margin:56px 40px!important;
 
 	}
 
@@ -2700,7 +2712,7 @@ figure.show{
 		margin-top: -127%;
 		margin-left: 17%;
 		width: 87%;
-		height: 52%;
+		height: 62%;
 		border:0;
 		z-index: 1000;
 		
@@ -2719,14 +2731,14 @@ figure.show{
 	}
 
 	.colabDown{
-		margin-top: -16%!important;
+		margin-top: -29%!important;
 	}
 
 	.colabCard{
 		margin-top: -117%;
 		margin-left: 15%;
 		width: 87%;
-		height: 46%;
+		height: 59%;
 		border:0;
 		z-index: 1000;
 		
@@ -2746,14 +2758,14 @@ figure.show{
 	}
 
 	.improvDown{
-		margin-top: -6%!important;
+		margin-top: -18%!important;
 	}
 
 	.improvCard{
 		margin-top: -106%;
 		margin-left: 16%;
 		width: 87%;
-		height: 52%;
+		height: 61%;
 		border:0;
 		z-index: 1000;
 		
@@ -2777,7 +2789,7 @@ figure.show{
 	}
 
 	.discDown{
-		margin-top: 5%!important;
+		margin-top: -7%!important;
 	}
 
 	.fotoDown{
@@ -2818,6 +2830,7 @@ figure.show{
 		width: 84%;
 		margin-left: 19%;
 		z-index: 1000;
+		height: 52%;
 	}
 
 	.closedFoto{
@@ -2830,11 +2843,13 @@ figure.show{
 	.workTitle{
 		
 		z-index: 1000;
+		margin-top: -1%;
 	}
 
 	.workTitle:hover{
 		animation: none;
-		color: black;
+		color: white;
+		background-color: black;
 	}
 
 }
