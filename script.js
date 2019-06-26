@@ -58,6 +58,11 @@ $('#sobre').click( function() {
     //     $("#pesq").removeClass("selected");
        
     // }
+
+    if(width<900){
+        $(".leiaMaisCard").removeClass("transparent");
+        
+    }
    
    
     $(".sobreCard").toggleClass("transparent");
@@ -611,19 +616,23 @@ for (var i = 0; i < btns.length; i++) {
     $(".leiaMais").addClass("displayNone");
     $(".leiaMenos").removeClass("displayNone");
     $(".sobreCard").addClass("sobreCardOpen");
-    $(".wordsSecond").removeClass("transparent");
+    $(".wordsSecond").removeClass("displayNone");
+    $(".wordsFirst").removeClass("displayNone");
 
-   
+ 
    
 
 if(width<900){
      $('html,body').animate({
         scrollTop: $(".leiaMais").offset().top},
         'slow');
+
 }
 if(width>900){
     $(".largerFont").addClass("bioOpen");
 }
+
+
 });
 
 
@@ -633,7 +642,9 @@ if(width>900){
     $(".leiaMenos").addClass("displayNone");
     $(".leiaMais").removeClass("displayNone");
     $(".sobreCard").removeClass("sobreCardOpen");
-    $(".wordsSecond").addClass("transparent");
+    $(".wordsSecond").addClass("displayNone");
+    $(".wordsFirst").addClass("displayNone");
+
    
    
 
@@ -1606,5 +1617,6 @@ var width = window.screen.availWidth;
 
 
 // }
+
 
 
