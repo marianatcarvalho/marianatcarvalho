@@ -2522,7 +2522,7 @@ figure.show{
 
 @media screen and (max-width: 900px){
 
-
+	html, body {margin: 0; height: 100%; overflow: hidden}
 
 	header{
 		margin-left: -17%!important;
@@ -2546,7 +2546,7 @@ figure.show{
 
 	#body{
 		
-		overflow: auto!important;
+		
 		height: 100vh;
 
 	}
@@ -2563,6 +2563,7 @@ figure.show{
 	.sobreCard{
 		margin-top: -79%;
 		margin-left: 21%;
+		height: 91%;
 	}
 
 	.workCard{
