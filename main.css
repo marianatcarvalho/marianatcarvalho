@@ -2544,12 +2544,7 @@ figure.show{
 		font-size: .6em;
 	}
 
-	#body{
-		
-		
-		height: 100vh;
 
-	}
 
 
 	.card{
@@ -2563,7 +2558,7 @@ figure.show{
 	.sobreCard{
 		margin-top: -79%;
 		margin-left: 21%;
-		height: 91%;
+		
 	}
 
 	.workCard{
