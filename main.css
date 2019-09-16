@@ -224,7 +224,15 @@ input:checked + .slider:before {
 }
 
 /*===============================================*/
-
+@media (max-width: 1650px){
+	.bioText{
+		margin-left: 65%!important;
+		font-size: .9em;
+	}
+	.wordsFirst{
+		margin-left: 11.3%!important;
+	}
+}
 
 
 @media (min-width: 800px) {
