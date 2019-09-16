@@ -226,6 +226,7 @@ input:checked + .slider:before {
 /*===============================================*/
 
 
+
 @media (min-width: 800px) {
 	nav:hover{
 	transition: opacity .7s ease-in;
