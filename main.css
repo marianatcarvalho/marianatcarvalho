@@ -235,20 +235,21 @@ input:checked + .slider:before {
 	height: 50px;
 	background-color: white;
 	width: 217px;
-	margin-top: 4%;
+	margin-top: -4%;
 	/* border-top-right-radius: 20px; */
 	transition: .3s;
 	float: right;
-	position: fixed;
+	position: absolute;
+	transform: scale(0.8);
 }
 
 .bottomDown{
-	    margin-top: 27%!important;
+	    margin-top: 31%!important;
 			transition: 4s!important;
 }
 
 .bottomWork{
-	margin-left: 79%!important;
+	margin-left: 78%!important;
 	transition: 4s!important;
 }
 
@@ -627,16 +628,15 @@ section {
   }
 
 .leiaMaisCard{
-	width: 35%;
-
+	width: 33%;
 	margin-left: -44%;
 	transition: 2s linear;
 	overflow-y: auto;
-	height: 131%;
-	border-left:6px solid black;
-
+  height: 65.8%;
+	border-left: 6px solid black;
+	border-bottom: 6px solid black;
 	padding: 3%;
-	margin-top: -5%;
+  margin-top: -5%;
 
 }
 
@@ -650,7 +650,14 @@ section {
 	transition: 3s linear;
 }
 
-
+.bioOpen p:hover{
+	position: absolute;
+	text-decoration: bold;
+	text-align: center;
+	font-size: 1.5em;
+	transition: 0.5s;
+	cursor: pointer;
+}
 
 
 
@@ -730,16 +737,15 @@ section {
 
 .fotoCard{
 	margin-top: -18%;
-	height: 56.6%;
-	width:49%;
+	height: 55.7%;
+	width: 49%;
 	margin-left: 64%;
- 	background-color: rgba(255, 255, 255, 0);
-/* 	border: 5px solid black;
-*/ 	position: absolute;
- 	opacity: 1;
- 	transition: all 2s linear;
- 	overflow-y: auto;
-
+	background-color: rgba(255, 255, 255, 0);
+	/* border: 5px solid black; */
+	position: absolute;
+	opacity: 1;
+	transition: all 2s linear;
+	overflow-y: auto;
 
 
 }
@@ -831,7 +837,7 @@ section {
 
 .soloCard{
 	margin-top: -19%;
-	height: 70%;
+	height: 66%;
 	width:41%;
 	margin-left: 17%;
  	background-color: transparent;
@@ -868,7 +874,7 @@ section {
 
 .colabCard{
 	margin-top: -19%;
-	height: 70%;
+	height: 66%;
 	width:45%;
 	margin-left: 26%;
  	background-color: transparent;
@@ -909,7 +915,7 @@ section {
 
 .improvCard{
 	margin-top: -18.8%;
-	height: 70%;
+	height: 66%;
 	width:45%;
 	margin-left: 38.6%;
  	background-color: transparent;
@@ -959,7 +965,7 @@ section {
 
 .discCard{
 	margin-top: -19.5%;
-	height: 70%;
+	height: 66%;
 	width:45%;
 	margin-left: 51.3%;
  	background-color:transparent;
@@ -2593,6 +2599,35 @@ figure.show{
 
 
 /*===========================================================media selector===========================================================*/
+@media screen and(max-width: 1750px){
+	.improvCard{
+		.margin-left: 40%;
+	}
+
+
+}
+
+
+@media screen and(min-width: 1650px){
+	.improvCard{
+		.margin-left: 40%;
+	}
+	.leiaMaisCard{
+		height: 65%!important;
+	}
+	section .inicio .inicioBlock h1{
+		font-size: 4em!important;
+	}
+
+
+
+}
+
+@media screen and (max-width: 1100px){
+	#myCanvas{
+		display: none;
+	}
+
 
 @media screen and (max-width: 900px){
 
@@ -2970,66 +3005,5 @@ figure.show{
 		color: white;
 		background-color: black;
 	}
-
-}
-
-@media screen and(max-width: 1750px){
-	.improvCard{
-		.margin-left: 40%;
-	}
-
-
-}
-
-
-@media screen and(max-width: 1650px){
-	.improvCard{
-		.margin-left: 40%;
-	}
-	.leiaMaisCard{
-		height: 65%;
-	}
-	section .inicio .inicioBlock h1{
-		font-size: 4em!important;
-	}
-
-
-
-}
-
-/*@media screen and (max-width: 1450px){
-
-
-	.menu{
-		margin-top: 5%;
-		font-size: 1.5em;
-	}
-
-
-}*/
-
-/*@media screen and (max-width: 1400px){
-
-
-	.language{
-		margin-left: 0;
-	}
-	.menu{
-		margin-left: 0;
-		font-size: 1.2em;
-	}
-	.secondNav{
-		margin-top: -10%;
-	}
-
-
-}*/
-
-@media screen and (max-width: 1100px){
-	#myCanvas{
-		display: none;
-	}
-
-
 
 }
