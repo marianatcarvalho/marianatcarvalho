@@ -13,12 +13,12 @@
     //     $("#sobre").removeClass("selected");
     //     $("#work").removeClass("selected");
     //     $("#pesq").removeClass("selected");
-       
+
     // }
 
     $(".card").toggleClass("transparent");
     $(".card").toggleClass("visible");
-  
+
 
     if($(".sobreCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")||$(".fotoCard").hasClass("visible")){
     	$(".sobreCard").addClass("transparent");
@@ -56,15 +56,15 @@ $('#sobre').click( function() {
     //     $("#sobre").removeClass("selected");
     //     $("#work").removeClass("selected");
     //     $("#pesq").removeClass("selected");
-       
+
     // }
 
     if(width<900){
         $(".leiaMaisCard").removeClass("transparent");
-        
+
     }
-   
-   
+
+
     $(".sobreCard").toggleClass("transparent");
     $(".sobreCard").toggleClass("visible");
     if($(".card").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".soloCard").hasClass("visible")||$(".colabCard").hasClass("visible")||$(".improvCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")||$("fotoCard").hasClass("visible")){
@@ -77,9 +77,9 @@ $('#sobre').click( function() {
         $(".pesqCard").addClass("transparent");
 
          $(".fotoCard").addClass("transparent");
-         
 
-   
+
+
     }
 
     $(".card").removeClass("visible");
@@ -113,16 +113,16 @@ $('#work').click( function() {
     $(".fotoCard").toggleClass("transparent");
     $(".fotoCard").toggleClass("visible");
 
-   
-   
+
+
 
     if($(".card").hasClass("visible")||$(".sobreCard").hasClass("visible")||$(".contatoCard").hasClass("visible")||$(".discCard").hasClass("visible")||$(".pesqCard").hasClass("visible")){
         $(".card").addClass("transparent");
         $(".sobreCard").addClass("transparent");
         $(".contatoCard").addClass("transparent");
-        
+
         $(".improvCard").addClass("transparent");
-        
+
         $(".pesqCard").addClass("transparent");
 
     }
@@ -131,8 +131,8 @@ $('#work').click( function() {
     $(".card").removeClass("visible");
     $(".sobreCard").removeClass("visible");
     $(".contatoCard").removeClass("visible");
-   
-    
+
+
     $(".discCard").removeClass("visible");
     $(".pesqCard").removeClass("visible");
 
@@ -219,7 +219,7 @@ $('#pesq').click( function() {
     //     $("#sobre").removeClass("selected");
     //     $("#work").removeClass("selected");
     //     $("#pesq").removeClass("selected");
-       
+
     // }
 
     $(".pesqCard").toggleClass("transparent");
@@ -234,7 +234,7 @@ $('#pesq').click( function() {
         $(".discCard").addClass("transparent");
         $(".fotoCard").addClass("transparent");
 
-         
+
 
     }
 
@@ -282,6 +282,7 @@ $("#inicio").click( function(){
 	$(".navbar").removeClass("cursorDefault");
 	$(".navbar").addClass("fadeIn");
 	$(".inicio").addClass("transparent");
+  $(".bottomBar").addClass("bottomDown");
     if($(".socialMedia").hasClass("transparent")){
         $(".socialMedia").removeClass("transparent");
         $(".social").removeClass("displayNone");
@@ -289,11 +290,11 @@ $("#inicio").click( function(){
         $(".social").removeClass("fade");
 
     }
-    
+
 	setTimeout(function(){
 	 $(".inicio").addClass("displayNone");
 	 }, 1000);
-	
+
 });
 
 
@@ -305,19 +306,20 @@ $("#begin").click( function(){
     $(".navbar").removeClass("cursorDefault");
     $(".navbar").addClass("fadeIn");
     $(".inicio").addClass("transparent");
-   
+    $(".bottomBar").addClass("bottomDown");
+
     $(".pt").addClass("displayNone");
     if($(".socialMedia").hasClass("transparent")){
         $(".socialMedia").removeClass("transparent");
         $(".social").removeClass("displayNone");
         $(".secondNav").removeClass("displayNone");
         $(".social").removeClass("fade");
-       
+
 
 
     }
 
-    
+
     setTimeout(function(){
      $(".inicio").addClass("displayNone");
      }, 1000);
@@ -337,7 +339,7 @@ $("#begin").click( function(){
 
 //     }
 
-    
+
 //     setTimeout(function(){
 //      $(".inicio").addClass("displayNone");
 //      }, 1000);
@@ -353,7 +355,7 @@ function String(id, startPoint, endPoint) {
     //ctor
     this.canvas = document.getElementById(id);
     this.ctx = this.canvas.getContext('2d');
-    
+
     // console.dir(this.canvas);
     this.canvas.width = this.canvas.clientWidth;
     this.canvas.height = this.canvas.clientHeight;
@@ -369,9 +371,9 @@ function String(id, startPoint, endPoint) {
     this.finishWave = false;
     //add event listener
     var self = this;
-    this.canvas.addEventListener('mousemove',  function(pos) { 
+    this.canvas.addEventListener('mousemove',  function(pos) {
         console.dir(pos);
-        self.mouseMove(self, pos) 
+        self.mouseMove(self, pos)
     }, false);
 }
 
@@ -384,13 +386,13 @@ String.prototype.drawArc = function(startPoint, thirdPoint, endPoint, ctx){
     var dx2 = endPoint.x - thirdPoint.x;
 
     var aSlope = dy1/dx1;
-    var bSlope = dy2/dx2;  
+    var bSlope = dy2/dx2;
 
 
     var centerX = (aSlope*bSlope*(startPoint.y - endPoint.y) + bSlope*(startPoint.x + thirdPoint.x)
         - aSlope*(thirdPoint.x+endPoint.x) )/( 2* (bSlope-aSlope) );
     var centerY = -1*(centerX - (startPoint.x+thirdPoint.x)/2)/aSlope +  (startPoint.y+thirdPoint.y)/2;
-    
+
     // var centerX = (aSlope*bSlope*(y0 - y2) + bSlope*(x0 + x1)
     //     - aSlope*(x1+x2) )/( 2* (bSlope-aSlope) );
     // var centerY = -1*(centerX - (x0+x1)/2)/aSlope +  (y0+y1)/2;
@@ -421,13 +423,13 @@ String.prototype.drawArc = function(startPoint, thirdPoint, endPoint, ctx){
 
 }
 String.prototype.draw = function(){
-    
+
     // draw stuff
-    var r = circleCenter(   new Point(this.startPoint.x, this.startPoint.y), 
-                            new Point(this.controlPoint.x, this.controlPoint.y), 
+    var r = circleCenter(   new Point(this.startPoint.x, this.startPoint.y),
+                            new Point(this.controlPoint.x, this.controlPoint.y),
                             new Point(this.endPoint.x, this.endPoint.y) ).r;
 
-    if( r > 600 
+    if( r > 600
         && this.controlPoint.x > this.startPoint.x
         && this.controlPoint.x < this.endPoint.x ){
         // console.log(r);
@@ -460,15 +462,15 @@ String.prototype.clear = function(){
 
 String.prototype.update = function(){
     // update
-    
+
 };
 
 String.prototype.mouseMove = function(self, pos){
     self.controlPoint.x = pos.layerX;
-    self.controlPoint.y = pos.layerY;   
+    self.controlPoint.y = pos.layerY;
 };
 
-/*Created By Wenting Zhang 
+/*Created By Wenting Zhang
 */
 
 var dist = function(x, y, x0, y0){
@@ -482,7 +484,7 @@ var circleCenter = function(startPoint, thirdPoint, endPoint){
     var dx2 = endPoint.x - thirdPoint.x;
 
     var aSlope = dy1/dx1;
-    var bSlope = dy2/dx2;  
+    var bSlope = dy2/dx2;
 
 
     var centerX = (aSlope*bSlope*(startPoint.y - endPoint.y) + bSlope*(startPoint.x + thirdPoint.x)
@@ -512,12 +514,12 @@ window.requestAnimFrame = (function(callback) {
 })();
 
 var myString = new String('myCanvas', new Point(300, 70.5), new Point(900, 70.5));
-(function animate() {   
+(function animate() {
     // update
     myString.update();
     // clear
     myString.clear();
-    
+
     // draw stuff
     // console.log("run every frame");
     myString.draw();
@@ -542,10 +544,10 @@ $(".hover").mouseleave(
 //     if($(".menu-item").hasClass("selected")){
 //         $("menu-item").removeClass("selected");
 //     }
-    
+
 //         $("#news").toggleClass("selected");
-    
-    
+
+
 // });
 
 // $("#sobre").click(function(){
@@ -591,8 +593,11 @@ $(".hover").mouseleave(
 //         $("#news").removeClass("selected");
 //     }
 // });
-
-
+function bottomDown(){
+  if($(".inicio").hasClass("displayNone")){
+    $(".bottomBar").addClass("bottomDown");
+  }
+}
 
 
 // Add active class to the current button (highlight it)
@@ -601,7 +606,7 @@ var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active");
-  if (current.length > 0) { 
+  if (current.length > 0) {
     current[0].className = current[0].className.replace(" active", "");
   }
   this.className += " active";
@@ -619,8 +624,8 @@ for (var i = 0; i < btns.length; i++) {
     $(".wordsSecond").removeClass("displayNone");
     $(".wordsFirst").removeClass("displayNone");
 
- 
-   
+
+
 
 if(width<900){
      $('html,body').animate({
@@ -645,10 +650,10 @@ if(width>900){
     $(".wordsSecond").addClass("displayNone");
     $(".wordsFirst").addClass("displayNone");
 
-   
-   
 
-   
+
+
+
 
 if(width<900){
      $('html,body').animate({
@@ -662,12 +667,12 @@ if(width>900){
 
 
 // $(".workTitleLeft").click(function(){
-    
-       
-      
-    
-   
-  
+
+
+
+
+
+
 
 // });
 
@@ -678,12 +683,13 @@ $("#work").click(function(){
     $(".colabCard").addClass("colabWidth");
     $(".improvCard").addClass("improvWidth");
     $(".discCard").addClass("discWidth");
+    $(".bottomBar").addClass("bottomWork");
     if($(".improvCard").hasClass("visible")){
         $(".improvCard").removeClass("transparent");
     }else{
         $(".improvCard").addClass("transparent");
     }
-    
+
 });
 
 function soloPush(){
@@ -696,7 +702,7 @@ function soloPush(){
      $(".discCard").addClass("pushDisc");
     $(".fotoCard").addClass("fotoPush");
     $(".fotoCard").addClass("closedFoto");
-   
+
 
     if($(".improvCard").hasClass("pushImprov")||$(".colabCard").hasClass("pushColab")){
         $(".improvCard").removeClass(".pushImprov");
@@ -716,23 +722,23 @@ function closeVideo(){
 
 
 $(".soloBtn").click(function(){
-    
+
 
     $(".soloBtn").addClass("activeBtn");
-    
+
     $(".soloBtn").removeClass("closedCard");
     $(".soloCard").animate({scrollTop: 0}, 2000);
 
     closeVideo();
 
-     
+
     soloPush();
-    
+
     // if(width<=900 && $("#soloBtn").hasClass("activeBtn")){
     //     $(".colabCard").addClass("colabDown");
     //     $(".improvCard").addClass("improvDown");
     //     $(".discCard").addClass("discDown");
-        
+
 
     // }
     if(width<=900 && $(".soloBtn").hasClass("closedCard")){
@@ -772,7 +778,7 @@ function colabPush(){
         $(".improvCard").removeClass(".pushImprovColab");
         $(".colabCard").removeClass("pushColab");
     }
-    
+
 }
 
 $(".colabBtn").click(function(){
@@ -786,7 +792,7 @@ $(".colabBtn").click(function(){
    colabPush();
 
     if(width<=900 && $("#colabBtn").hasClass("closedCard")){
-        
+
         $(".improvCard").removeClass("improvDown");
         $(".discCard").removeClass("discDown");
         $(".liWork").removeClass("liWorkOpen");
@@ -796,7 +802,7 @@ $(".colabBtn").click(function(){
 
     }
     else{
-      
+
         $(".improvCard").addClass("improvDown");
         $(".discCard").addClass("discDown");
         $(".liWork").addClass("liWorkOpen");
@@ -804,7 +810,7 @@ $(".colabBtn").click(function(){
         $(".colabBtn").addClass("closedCard");
 
         console.log("this is else colab")
-    }   
+    }
 
 
 
@@ -829,7 +835,7 @@ function improvPush(){
         // $(".discCard").removeClass("pushDisc");
 
         // $(".colabCard").removeClass("pushColab");
-    } 
+    }
 }
 
 $(".improvBtn").click(function(){
@@ -845,9 +851,9 @@ $(".improvBtn").click(function(){
 
 
      if(width<=900 && $(".improvBtn").hasClass("closedCard")){
-        
+
         $(".improvCard").removeClass("improvDown");
-        
+
         $(".discCard").removeClass("discDown");
         $(".liWork").removeClass("liWorkOpen");
         $(".work").removeClass("workOpen");
@@ -857,7 +863,7 @@ $(".improvBtn").click(function(){
 
     }
     else{
-      
+
         $(".colabCard").removeClass("colabDown");
         $(".discCard").addClass("discDown");
         $(".liWork").addClass("liWorkOpen");
@@ -892,11 +898,11 @@ function discPush(){
 $(".discBtn").click(function(){
 
     $(".discBtn").addClass("activeBtn");
-   
+
     $(".discCard").removeClass("discDown");
 
     if($(".improvCard").hasClass("improvDown")||$(".colabCard").hasClass("colabDown")){
-       $(".improvCard").removeClass("improvDown"); 
+       $(".improvCard").removeClass("improvDown");
        $(".colabCard").removeClass("colabDown");
     }
 
@@ -909,13 +915,13 @@ $(".discBtn").click(function(){
         $(".soloCard").removeClass("soloDown");
         $(".colabCard").removeClass("colabDown");
         $(".improvCard").removeClass("improvDown");
-         
-       
+
+
         $(".discCard").removeClass("closedCard");
 
          $(".liWork").addClass("liWorkOpen");
         $(".work").addClass("workOpen");
-        
+
 
        console.log("this is if")
     }
@@ -923,8 +929,8 @@ $(".discBtn").click(function(){
     else{
         console.log("this is else")
         $(".discCard").removeClass("discDown");
-       
-      
+
+
         $(".discBtn").addClass("closedCard");
         $(".discBtn").removeClass("activeBtn");
 
@@ -960,7 +966,7 @@ function fotoPush(){
 
 
 $(".fotoBtn").click(function(){
-   
+
     $(".fotoCard").toggleClass("fotoPush");
     if($(".improvCard").hasClass("improvDown")||$(".colabCard").hasClass("colabDown")|| $(".discCard").hasClass("discDown")){
         $(".improvCard").removeClass("improvDown");
@@ -973,8 +979,8 @@ $(".fotoBtn").click(function(){
     // $(".improvCard").addClass("improvWidth");
     // $(".discCard").addClass("discWidth");
 
-    
-   
+
+
 
 
     closeVideo();
@@ -1005,11 +1011,11 @@ function videoState(){
  $(".music").click(function(){
     openPlayer()
  });
- 
+
 function openPlayer(){
-   
+
         $(".player").removeClass("displayNone");
-    
+
 }
 
 function soloState(){
@@ -1048,7 +1054,7 @@ var previousTarget=null;
 
 
 $(".listenOneBtn").click(function(){
-    
+
  if(this===previousTarget||(!$(".soloCard").hasClass("noWidth"))) {
         // alert("You've clicked this element twice.");
         videoState();
@@ -1059,7 +1065,7 @@ $(".listenOneBtn").click(function(){
 
     previousTarget=this;
 
-   
+
    closeVideo();
 
 $(".videoOne").toggleClass("heightZero");
@@ -1073,12 +1079,12 @@ $(".videoOne").toggleClass("heightZero");
 
 // $(".listenOneBtn").click(function(event){
 //     soloState();
-    
+
         // $(".soloCard").addClass("noWidth");
        // videoState()
-         
+
         // openCheck();
-    
+
      // videoState();
 
      // if(workTabs.tabs.soloTab.soloPlayers[0]!=true){
@@ -1095,14 +1101,14 @@ $(".videoOne").toggleClass("heightZero");
     //     count++;
     // if(workTabs.tabs.soloTab.soloPlayers[0]!=true){
     //     count=0;
-         
-         
+
+
     // }
-    
-        
-        
+
+
+
     // }
-   
+
      // return workTabs.tabs.soloTab.soloPlayers[0]=true;
 
 
@@ -1119,7 +1125,7 @@ $(".listenTwoBtn").click(function(){
     }
 
     previousTarget=this;
-   
+
     closeVideo();
 
 
@@ -1127,7 +1133,7 @@ $(".listenTwoBtn").click(function(){
     if($(".videoTwo").hasClass("open")){
         $(".videoTwo").addClass("heightZero");
     }
-   
+
 
 
     // return workTabs.tabs.soloTab.soloPlayers[1]=true;
@@ -1152,7 +1158,7 @@ $(".listenThreeBtn").click(function(){
     if($(".videoThree").hasClass("open")){
         $(".videoThree").addClass("heightZero");
     }
-   
+
 
 
     // return workTabs.tabs.soloTab.soloPlayers[1]=true;
@@ -1172,7 +1178,7 @@ $(".listenColabOneBtn").click(function(){
 
     previousTarget=this;
 
-   
+
    closeVideo();
 
 $(".videoColabOne").toggleClass("heightZero");
@@ -1196,7 +1202,7 @@ $(".listenImprovOneBtn").click(function(){
 
     previousTarget=this;
 
-   
+
    closeVideo();
 
 
@@ -1222,8 +1228,8 @@ $(".listenImprovOneBtn").click(function(){
 // definir abas de work como objetos que tem uma lista de ids???
 
 
-// 
-//     musicArr: "musicArr": 
+//
+//     musicArr: "musicArr":
 //             [
 //               "playing"= {
 //                           isPlaying: false
@@ -1242,7 +1248,7 @@ $(".listenImprovOneBtn").click(function(){
 
 // var soloTab ={
 //    "players":soloPlayers
-            
+
 // };
 
 
@@ -1265,9 +1271,9 @@ $(".listenImprovOneBtn").click(function(){
 
 // function verifier(element){
 // workTabs.tabs.soloTab.soloPlayers.forEach(function(element){
- 
 
-    
+
+
 //     return element
 // });
 //     return element
@@ -1280,7 +1286,7 @@ $(".listenImprovOneBtn").click(function(){
 // function isPlaying(){
 //     if(workTabs.tabs.soloTab.soloPlayers.some(verifier)==true){
 
-        
+
 //    return "playing";  // comand for adding pushCards and closing videos
 // }
 // else{
@@ -1349,11 +1355,11 @@ $(".listenImprovOneBtn").click(function(){
 // });
 
 // function getRandomPadding(){
-//     var min=5; 
-//     var max=40;  
-//     var random =Math.floor(Math.random() * (+max - +min)) + +min; 
-    
-//     return random; 
+//     var min=5;
+//     var max=40;
+//     var random =Math.floor(Math.random() * (+max - +min)) + +min;
+
+//     return random;
 // }
 
 
@@ -1390,7 +1396,7 @@ var tag = document.createElement('script');
           'onStateChange': onPlayerStateChange,
           'enablejsapi':1
         }
-      });    
+      });
       videos[1] = new YT.Player('videoSoloTwo', {
         events: {
             'onStateChange': onPlayerStateChange,
@@ -1418,22 +1424,22 @@ var tag = document.createElement('script');
 
     }
 
-       
 
 
 
-        
 
 
-   
+
+
+
 
 
 var currentVideo;
 var previousVideo;
-    
+
     function onPlayerStateChange(event) {
 
-        
+
 
       if (event.data == YT.PlayerState.PLAYING) {
          currentVideo = event.target.a.id;
@@ -1441,45 +1447,45 @@ var previousVideo;
         console.log("currentVideo: " + currentVideo);
         console.log("previousVideo: " + previousVideo);
 
-        
+
         if(typeof previousVideo === "undefined"){
 
               previousVideo = currentVideo;
-            
+
              console.log(event.target)
-           
+
         }
 
-       
+
 
         else if(previousVideo != event.target.a.id){
-            
+
             //stop previous video from playing
-            
+
             //assing new value for previousVideo?
              previousVideo = currentVideo;
-          
+
 
             console.log("elseif")
 
         }
-        
-       
-      
-       
+
+
+
+
       }
 
       else if(event.data == YT.PlayerState.ENDED){
         console.log("stoped")
       }
 
-       
 
 
-      
+
+
     }
 
-    
+
 
     $('.stop').click( function() {
         //loop players array to stop them all
@@ -1497,9 +1503,9 @@ var previousVideo;
 
 
 
-    
 
-   
+
+
 
 // =========================================================height and width  ==============================================
 var height= window.screen.availHeight;
@@ -1521,7 +1527,7 @@ var width = window.screen.availWidth;
 //     $(".card").css("margin-top", "-185%");
 
 
-  
+
 //     if($(".liMenu").hasClass("liWorkOpen")){
 //         $(".liMenu").removeClass("liWorkOpen");
 //     }
@@ -1533,9 +1539,9 @@ var width = window.screen.availWidth;
 //     if($(".work").hasClass("workOpen")){
 //         $(".work").removeClass("workOpen");
 //     }
-   
 
-   
+
+
 
 // });
 
@@ -1559,7 +1565,7 @@ var width = window.screen.availWidth;
 //     if($(".work").hasClass("workOpen")){
 //         $(".work").removeClass("workOpen");
 //     }
-   
+
 
 
 // });
@@ -1584,10 +1590,10 @@ var width = window.screen.availWidth;
 //     if($(".work").hasClass("workOpen")){
 //         $(".work").removeClass("workOpen");
 //     }
-   
 
 
-   
+
+
 
 // });
 
@@ -1609,7 +1615,7 @@ var width = window.screen.availWidth;
 //     if($(".work").hasClass("workOpen")){
 //         $(".work").removeClass("workOpen");
 //     }
-   
+
 
 
 // });
@@ -1617,6 +1623,3 @@ var width = window.screen.availWidth;
 
 
 // }
-
-
-

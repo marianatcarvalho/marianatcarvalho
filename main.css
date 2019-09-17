@@ -223,6 +223,71 @@ input:checked + .slider:before {
   transform:rotateZ(-45deg);
 }
 
+
+/*===============================================*/
+											/* bottom bar */
+/*===============================================*/
+
+.bottomBar {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	height: 50px;
+	background-color: white;
+	width: 217px;
+	margin-top: 4%;
+	/* border-top-right-radius: 20px; */
+	transition: .3s;
+	float: right;
+	position: fixed;
+}
+
+.bottomDown{
+	    margin-top: 37%!important;
+			transition: 4s!important;
+}
+
+.bottomWork{
+	margin-left: 79%!important;
+	transition: 4s!important;
+}
+
+
+.bottomBar::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 50px;
+    background: red;
+
+    transition: all 3s;
+		border-top-right-radius: 20px;
+}
+
+.bottomBar:hover::after {
+    width: 100%;
+    transition: all .3s;
+		border-bottom-left-radius: 20px;
+		color: transparent;
+}
+
+.brandLink{
+	color: white;
+	text-decoration: none;
+	display: inline;
+	float: right;
+	transform: rotate(5.1deg);
+	font-size: 65px;
+	margin-top: -14px;
+	color: white;
+
+}
+
+
+
+
+
+
 /*===============================================*/
 @media (max-width: 1650px){
 	.bioText{
@@ -665,7 +730,7 @@ section {
 
 .fotoCard{
 	margin-top: -18%;
-	height: 66.6%;
+	height: 56.6%;
 	width:49%;
 	margin-left: 64%;
  	background-color: rgba(255, 255, 255, 0);
@@ -2684,6 +2749,11 @@ figure.show{
 		padding-left: 22%;
 	}
 
+	.bottomBar {
+		margin-top: 263%;
+
+  }
+
 
 	.menu{
 		display: flex;
@@ -2775,11 +2845,11 @@ figure.show{
 	}
 
 	.colabDown{
-		margin-top: -29%!important;
+		margin-top: -113%!important;
 	}
 
 	.colabCard{
-		margin-top: -117%;
+		margin-top: -115%;
 		margin-left: 15%;
 		width: 89%;
 		height: 59%;
@@ -2802,11 +2872,11 @@ figure.show{
 	}
 
 	.improvDown{
-		margin-top: -18%!important;
+		margin-top: 12%!important;
 	}
 
 	.improvCard{
-		margin-top: -106%;
+		margin-top: -103.1%;
 		margin-left: 16%;
 		width: 87.6%;
 		height: 61%;
@@ -2833,7 +2903,7 @@ figure.show{
 	}
 
 	.discDown{
-		margin-top: -7%!important;
+		margin-top: 27%!important;
 	}
 
 	.fotoDown{
@@ -2841,7 +2911,7 @@ figure.show{
 	}
 
 	.discCard{
-		margin-top: -96%;
+		margin-top: -89%;
 		margin-left: 16%;
 		width: 87.6%;
 		height: 60%;
@@ -2871,11 +2941,11 @@ figure.show{
 	}
 
 	.fotoCard{
-		margin-top: -83%;
-		width: 85%;
-		margin-left: 19%;
-		z-index: 1000;
-		height: 52%;
+		margin-top: -74%;
+	  width: 85%;
+	  margin-left: 18.7%;
+	  z-index: 1000;
+	  height: 52%
 	}
 
 	.closedFoto{
