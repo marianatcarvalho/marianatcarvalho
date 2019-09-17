@@ -2986,7 +2986,12 @@ figure.show{
 	.improvCard{
 		.margin-left: 40%;
 	}
-
+	.leiaMaisCard{
+		height: 65%;
+	}
+	section .inicio .inicioBlock h1{
+		font-size: 4em!important;
+	}
 
 
 
