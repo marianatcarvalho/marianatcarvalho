@@ -241,6 +241,7 @@ input:checked + .slider:before {
 	float: right;
 	position: absolute;
 	transform: scale(0.8);
+	margin-left: 70%;
 }
 
 .bottomDown{
@@ -964,7 +965,7 @@ section {
 }
 
 .discCard{
-	margin-top: -19.5%;
+	margin-top: -19%
 	height: 66%;
 	width:45%;
 	margin-left: 51.3%;
