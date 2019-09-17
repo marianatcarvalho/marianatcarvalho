@@ -2787,15 +2787,15 @@ figure.show{
 	}
 
 	.bottomBar {
-		margin-top: 263%;
+		margin-top:219%;
 		margin-left: 54%!important;
 
 
   }
 
-	/* .bottomWork{
-
-	} */
+	.bottomDown{
+		margin-top: 17%!important;
+	}
 
 
 	.menu{
@@ -2869,7 +2869,7 @@ figure.show{
 		margin-top: -127%;
 		margin-left: 17%;
 		width: 87%;
-		height: 62%;
+		height: 54%;
 		border:0;
 		z-index: 1000;
 
@@ -2888,14 +2888,14 @@ figure.show{
 	}
 
 	.colabDown{
-		margin-top: -113%!important;
+		margin-top: -116%!important;
 	}
 
 	.colabCard{
 		margin-top: -115%;
 		margin-left: 15%;
 		width: 89%;
-		height: 59%;
+		height: 38%;
 		border:0;
 		z-index: 1000;
 
@@ -2915,14 +2915,14 @@ figure.show{
 	}
 
 	.improvDown{
-		margin-top: 12%!important;
+		margin-top: -14%!important;
 	}
 
 	.improvCard{
 		margin-top: -103.1%;
 		margin-left: 16%;
 		width: 87.6%;
-		height: 61%;
+		height: 39%;
 		border:0;
 		z-index: 1000;
 
@@ -2946,7 +2946,7 @@ figure.show{
 	}
 
 	.discDown{
-		margin-top: 27%!important;
+		margin-top: -1%!important;
 	}
 
 	.fotoDown{
@@ -2957,7 +2957,7 @@ figure.show{
 		margin-top: -89%;
 		margin-left: 16%;
 		width: 87.6%;
-		height: 60%;
+		height: 32%;
 		border:0;
 		z-index: 1000;
 
@@ -2978,7 +2978,7 @@ figure.show{
 	}
 
 	.pesqCard{
-		margin-top: -49%;
+		margin-top: -64%;
 		z-index: 1000;
 		width: 85%;
 	}
@@ -2988,7 +2988,7 @@ figure.show{
 	  width: 85%;
 	  margin-left: 18.7%;
 	  z-index: 1000;
-	  height: 52%
+	  height: 26%;
 	}
 
 	.closedFoto{
