@@ -241,7 +241,7 @@ input:checked + .slider:before {
 	float: right;
 	position: absolute;
 	transform: scale(0.8);
-	margin-left: 70%;
+	margin-left: 71%;
 }
 
 .bottomDown{
@@ -250,8 +250,9 @@ input:checked + .slider:before {
 }
 
 .bottomWork{
-	margin-left: 78%!important;
+
 	transition: 4s!important;
+	margin-left: 76%;
 }
 
 
@@ -2787,12 +2788,14 @@ figure.show{
 
 	.bottomBar {
 		margin-top: 263%;
+		margin-left: 54%!important;
+
 
   }
 
-	.bottomWork{
-		margin-left: 69%;
-	}
+	/* .bottomWork{
+
+	} */
 
 
 	.menu{
