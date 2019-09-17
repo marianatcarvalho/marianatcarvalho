@@ -2661,8 +2661,8 @@ figure.show{
 	}
 
 	.card{
-		margin-top: -62%;
-		height: 69%;
+		margin-top: -72%;
+	  height: 62%;
 		width: 86%;
 		margin-left: 7%;
 
@@ -2704,6 +2704,8 @@ figure.show{
 		transition: 1s linear;
 		margin-top: -12%;
 		height: 42%;
+		background-color: white;
+    opacity: 0.8;
 
 	}
 
@@ -2794,7 +2796,7 @@ figure.show{
   }
 
 	.bottomDown{
-		margin-top: 17%!important;
+		margin-top:-23%!important;
 	}
 
 
@@ -2869,7 +2871,7 @@ figure.show{
 		margin-top: -127%;
 		margin-left: 17%;
 		width: 87%;
-		height: 54%;
+		height: 46%;
 		border:0;
 		z-index: 1000;
 
@@ -2915,7 +2917,7 @@ figure.show{
 	}
 
 	.improvDown{
-		margin-top: -14%!important;
+		margin-top: -30%!important;
 	}
 
 	.improvCard{
@@ -2946,7 +2948,7 @@ figure.show{
 	}
 
 	.discDown{
-		margin-top: -1%!important;
+		margin-top: -20%!important;
 	}
 
 	.fotoDown{
