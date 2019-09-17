@@ -243,7 +243,7 @@ input:checked + .slider:before {
 }
 
 .bottomDown{
-	    margin-top: 37%!important;
+	    margin-top: 27%!important;
 			transition: 4s!important;
 }
 
@@ -2624,8 +2624,8 @@ figure.show{
 	}
 
 	.card{
-		margin-top: -80%;
-		height: 88%;
+		margin-top: -55%;
+		height: 81%;
 		width: 86%;
 		margin-left: 7%;
 
@@ -2753,6 +2753,10 @@ figure.show{
 		margin-top: 263%;
 
   }
+
+	.bottomWork{
+		margin-left: 69%;
+	}
 
 
 	.menu{
@@ -2935,7 +2939,7 @@ figure.show{
 	}
 
 	.pesqCard{
-		margin-top: -77%;
+		margin-top: -49%;
 		z-index: 1000;
 		width: 85%;
 	}
