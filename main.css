@@ -2710,12 +2710,13 @@ figure.show{
 	.slider-prev-next-control {
 		width: 100%;
 		margin-left: 1%;
+		font-size: 10px;
 	}
 
 
 	.slider-prev-next-control label {
 
-		font-size: 4em;
+		font-size: 2em;
 
 
 	}
