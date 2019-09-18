@@ -2686,8 +2686,8 @@ figure.show{
 	}
 
 	.card{
-		margin-top: -72%;
-	  height: 62%;
+		margin-top: -78%;
+	  height: 78%;
 		width: 86%;
 		margin-left: 7%;
 
@@ -2826,7 +2826,7 @@ figure.show{
   }
 
 	.bottomDown{
-		margin-top:-23%!important;
+		margin-top:-6%!important;
 	}
 
 
@@ -3010,9 +3010,10 @@ figure.show{
 	}
 
 	.pesqCard{
-		margin-top: -64%;
+		margin-top: -73%;
 		z-index: 1000;
 		width: 85%;
+		height: 78%;
 	}
 
 	.fotoCard{
