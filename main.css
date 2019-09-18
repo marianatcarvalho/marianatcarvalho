@@ -224,6 +224,24 @@ input:checked + .slider:before {
 }
 
 
+.noticia h1.mes {
+	font-size: 19.9px;
+	float: right;
+	margin-top: -20px;
+}
+
+.noticia h2.manchete{
+	font-size: 19px;
+  font-weight: 300;
+}
+
+.imagemNoticia{
+	height: 250px;
+	width: 100%;
+	border: 2px solid black;
+}
+
+
 /*===============================================*/
 											/* bottom bar */
 /*===============================================*/
@@ -520,8 +538,9 @@ section {
 
 }
 .noticia{
-	margin-bottom: 6%;
-	padding-right: 2%;
+		margin-bottom: 6%;
+		padding-right: 2%;
+		margin-top: 3%;
 }
 
 .noticia p{
@@ -565,6 +584,12 @@ section {
 
 .subTitulo{
 	margin-bottom: 0!important;
+}
+
+.leiaMais{
+		position: absolute;
+    margin-top: -2.3%;
+    margin-left: 14.9%;
 }
 
 .leiaMais:hover{
