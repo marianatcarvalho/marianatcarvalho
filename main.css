@@ -1081,16 +1081,22 @@ section {
 
 .tccPic img{
 	max-width: 100%;
-	transform: scale(4);
-	transition: 350s linear;
+	transform: scale(5);
+	transition: 120s linear;
 	max-height: 100%;
+	margin-top: 100%;
 }
 
 .tccPic img:hover{
 	transform: scale(1);
 	transition: 1.1s linear;
 	cursor: pointer;
+	margin-top: 0;
 
+}
+
+.tccPic img:active{
+	transform: scale(1);
 }
 
 .tccPic img::after{
